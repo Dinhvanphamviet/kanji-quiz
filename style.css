@@ -163,3 +163,74 @@ h2 {
   from {opacity: 0; transform: translateY(10px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+/* Mặc định (Desktop / Tablet) đã có sẵn */
+
+/* 📱 Responsive cho màn hình nhỏ hơn 768px (mobile) */
+@media (max-width: 768px) {
+  .container, .quiz-container {
+    width: 95%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .lesson-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 nút mỗi hàng */
+    gap: 10px;
+  }
+
+  .lesson-btn {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  #question-title {
+    font-size: 1.4rem;
+  }
+
+  .option-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .home-btn {
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* 📱 Rất nhỏ (dưới 480px, kiểu iPhone cũ) */
+@media (max-width: 480px) {
+  .lesson-list {
+    grid-template-columns: 1fr; /* Mỗi hàng 1 nút */
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .option-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
