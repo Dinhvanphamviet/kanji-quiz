@@ -274,3 +274,14 @@ h2 {
     padding: 10px;
   }
 }
+.info-box {
+  display: none; /* ẩn mặc định */
+  margin-top: 15px;
+  background: #fafafa;
+  border-left: 5px solid #42a5f5;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 15px;
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
