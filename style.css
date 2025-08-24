@@ -1,0 +1,165 @@
+/* ---------------- Toàn bộ trang ---------------- */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff, #e3f2fd);
+  background-attachment: fixed;
+}
+
+/* ---------------- Container chính ---------------- */
+.container, .quiz-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 95%;
+  max-width: 700px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* ---------------- Tiêu đề ---------------- */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+h2 {
+  color: #555;
+  font-weight: normal;
+}
+
+/* ---------------- Danh sách nút chọn bài ---------------- */
+.lesson-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ---------------- Nút chọn bài ---------------- */
+.lesson-btn {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: white;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+.lesson-btn:hover {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  transform: scale(1.05);
+}
+
+/* ---------------- Quiz ---------------- */
+#question-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #222;
+}
+
+.options {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.option-btn {
+  padding: 14px;
+  border: 2px solid #42a5f5;
+  border-radius: 12px;
+  cursor: pointer;
+  background: white;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.option-btn:hover {
+  background: #e3f2fd;
+  transform: scale(1.03);
+}
+
+/* ---------------- Kết quả + thông tin ---------------- */
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.info-box {
+  margin-top: 15px;
+  background: #fafafa;
+  border-left: 5px solid #42a5f5;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 15px;
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ---------------- Nút điều hướng ---------------- */
+.next-btn {
+  background: #66bb6a;
+  margin-top: 20px;
+}
+.next-btn:hover {
+  background: #388e3c;
+}
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ef5350;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.home-btn:hover {
+  background: #c62828;
+}
+
+/* ---------------- Footer ---------------- */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+}
+.footer strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* ---------------- Hiệu ứng ---------------- */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}

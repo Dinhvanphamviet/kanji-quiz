@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Japanese Quiz - Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Japanese Quiz</h1>
+    <h2>Chọn bài để bắt đầu (mỗi bài 20 câu)</h2>
+    <div class="lesson-list" id="lesson-list"></div>
+  </div>
+
+   <footer class="footer">
+    <strong>Đinh Việt</strong>
+  </footer>
+
+  <script>
+    const totalLessons = 10;
+    const lessonList = document.getElementById("lesson-list");
+
+    for (let i = 1; i <= totalLessons; i++) {
+      const btn = document.createElement("button");
+      btn.textContent = `Bài ${i}`;
+      btn.className = "lesson-btn";
+      btn.onclick = () => {
+        window.location.href = `quiz.html?lesson=${i}`;
+      };
+      lessonList.appendChild(btn);
+    }
+  </script>
+</body>
+</html>

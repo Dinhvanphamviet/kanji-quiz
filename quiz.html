@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Làm Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- nút quay lại -->
+    <button onclick="goHome()" class="home-btn">🏠 Trang chủ</button>
+
+    <h1 id="question-title"></h1>
+    <div id="options" class="options"></div>
+    <div id="result"></div>
+    <div id="full-info" class="info-box"></div>
+
+    <button onclick="nextQuestion()" id="next-btn" class="next-btn">Câu tiếp theo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
