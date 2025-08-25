@@ -76,6 +76,14 @@ let correctCount = 0;
 let wrongCount = 0;
 let answered = false; // cờ đánh dấu câu hiện tại đã trả lời chưa
 
+// Hàm trộn mảng
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 // Load dữ liệu quiz
 async function loadData() {
   const params = new URLSearchParams(window.location.search);
@@ -85,8 +93,11 @@ async function loadData() {
   const res = await fetch("data.json");
   const data = await res.json();
 
-  // Lọc câu hỏi dựa trên STT
+  // Lọc câu hỏi theo STT
   questions = data.filter(q => q.STT >= startSTT && q.STT <= endSTT);
+
+  // Trộn câu trong bài
+  shuffleArray(questions);
 
   currentQuestionIndex = 0;
   correctCount = 0;
