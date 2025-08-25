@@ -8,29 +8,21 @@
 </head>
 <body>
   <div class="container">
-    <h1>📘 Japanese Quiz</h1>
-    <h2>Chọn bài để bắt đầu (mỗi bài 20 câu)</h2>
-    <div class="lesson-list" id="lesson-list"></div>
+  <h1>📘 Japanese Quiz</h1>
+  <h2>Chọn phần để bắt đầu</h2>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-part="1">Phần 1</button>
+    <button class="tab-btn" data-part="2">Phần 2</button>
+    <button class="tab-btn" data-part="3">Phần 3</button>
   </div>
 
-  <footer class="footer">
-    <p>© 2025 <strong>Đinh Việt</strong></p>
-  </footer>
-
-  <script>
-    // Tạo danh sách 10 bài (197 câu ≈ 10 bài)
-    const totalLessons = 10;
-    const lessonList = document.getElementById("lesson-list");
-
-    for (let i = 1; i <= totalLessons; i++) {
-      const btn = document.createElement("button");
-      btn.textContent = `Bài ${i}`;
-      btn.className = "lesson-btn";
-      btn.onclick = () => {
-        window.location.href = `quiz.html?lesson=${i}`;
-      };
-      lessonList.appendChild(btn);
-    }
-  </script>
+  <!-- Content từng phần -->
+  <div class="tab-content" id="part1"></div>
+  <div class="tab-content" id="part2" style="display:none;"></div>
+  <div class="tab-content" id="part3" style="display:none;"></div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

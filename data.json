@@ -1377,5 +1377,1041 @@
     "hiragana": "りっぱな",
     "hanviet": "Lập - Phái",
     "nghia": "Tuyệt vời, tráng lệ, đáng kính"
+  },
+  {
+    "STT": 198,
+    "kanji": "努力",
+    "hiragana": "どりょく",
+    "hanviet": "NỖ - LỰC",
+    "nghia": "Nỗ lực, cố gắng"
+  },
+  {
+    "STT": 199,
+    "kanji": "発見",
+    "hiragana": "はっけん",
+    "hanviet": "PHÁT - KIẾN",
+    "nghia": "Khám phá, phát hiện"
+  },
+  {
+    "STT": 200,
+    "kanji": "件",
+    "hiragana": "けん",
+    "hanviet": "KIỆN",
+    "nghia": "Vụ, vấn đề"
+  },
+  {
+    "STT": 201,
+    "kanji": "通勤",
+    "hiragana": "つうきん",
+    "hanviet": "THÔNG - CẦN",
+    "nghia": "Đi làm"
+  },
+  {
+    "STT": 202,
+    "kanji": "岩",
+    "hiragana": "いわ",
+    "hanviet": "NHAM",
+    "nghia": "Đá, tảng đá"
+  },
+  {
+    "STT": 203,
+    "kanji": "首都",
+    "hiragana": "しゅと",
+    "hanviet": "THỦ - ĐÔ",
+    "nghia": "Thủ đô"
+  },
+  {
+    "STT": 204,
+    "kanji": "地球",
+    "hiragana": "ちきゅう",
+    "hanviet": "ĐỊA - CẦU",
+    "nghia": "Trái đất"
+  },
+  {
+    "STT": 205,
+    "kanji": "協力",
+    "hiragana": "きょうりょく",
+    "hanviet": "HIỆP - LỰC",
+    "nghia": "Hợp tác, chung sức"
+  },
+  {
+    "STT": 206,
+    "kanji": "応募",
+    "hiragana": "おうぼ",
+    "hanviet": "ỨNG - MỘ",
+    "nghia": "Ứng tuyển"
+  },
+  {
+    "STT": 207,
+    "kanji": "疑問",
+    "hiragana": "ぎもん",
+    "hanviet": "NGHI - VẤN",
+    "nghia": "Nghi vấn, câu hỏi"
+  },
+  {
+    "STT": 208,
+    "kanji": "発表",
+    "hiragana": "はっぴょう",
+    "hanviet": "PHÁT - BIỂU",
+    "nghia": "Phát biểu, công bố"
+  },
+  {
+    "STT": 209,
+    "kanji": "単語",
+    "hiragana": "たんご",
+    "hanviet": "ĐƠN - NGỮ",
+    "nghia": "Từ vựng"
+  },
+  {
+    "STT": 210,
+    "kanji": "到着",
+    "hiragana": "とうちゃく",
+    "hanviet": "ĐÁO - TRƯỚC",
+    "nghia": "Đến nơi"
+  },
+  {
+    "STT": 211,
+    "kanji": "過去",
+    "hiragana": "かこ",
+    "hanviet": "QUÁ - KHỨ",
+    "nghia": "Quá khứ"
+  },
+  {
+    "STT": 212,
+    "kanji": "情報",
+    "hiragana": "じょうほう",
+    "hanviet": "TÌNH - BÁO",
+    "nghia": "Thông tin"
+  },
+  {
+    "STT": 213,
+    "kanji": "値段",
+    "hiragana": "ねだん",
+    "hanviet": "TRỊ - ĐOẠN",
+    "nghia": "Giá cả"
+  },
+  {
+    "STT": 214,
+    "kanji": "表面",
+    "hiragana": "ひょうめん",
+    "hanviet": "BIỂU - DIỆN",
+    "nghia": "Bề mặt"
+  },
+  {
+    "STT": 215,
+    "kanji": "汗",
+    "hiragana": "あせ",
+    "hanviet": "HÃN",
+    "nghia": "Mồ hôi"
+  },
+  {
+    "STT": 216,
+    "kanji": "完成",
+    "hiragana": "かんせい",
+    "hanviet": "HOÀN - THÀNH",
+    "nghia": "Hoàn thành"
+  },
+  {
+    "STT": 217,
+    "kanji": "島",
+    "hiragana": "しま",
+    "hanviet": "ĐẢO",
+    "nghia": "Đảo"
+  },
+  {
+    "STT": 218,
+    "kanji": "平日",
+    "hiragana": "へいじつ",
+    "hanviet": "BÌNH - NHẬT",
+    "nghia": "Ngày thường"
+  },
+  {
+    "STT": 219,
+    "kanji": "卒業",
+    "hiragana": "そつぎょう",
+    "hanviet": "TỐT - NGHIỆP",
+    "nghia": "Tốt nghiệp"
+  },
+  {
+    "STT": 220,
+    "kanji": "他人",
+    "hiragana": "たにん",
+    "hanviet": "THA - NHÂN",
+    "nghia": "Người khác"
+  },
+  {
+    "STT": 221,
+    "kanji": "外科",
+    "hiragana": "げか",
+    "hanviet": "NGOẠI - KHOA",
+    "nghia": "Khoa ngoại"
+  },
+  {
+    "STT": 222,
+    "kanji": "笑顔",
+    "hiragana": "えがお",
+    "hanviet": "TIẾU - NHAN",
+    "nghia": "Vẻ mặt tươi cười"
+  },
+  {
+    "STT": 223,
+    "kanji": "以降",
+    "hiragana": "いこう",
+    "hanviet": "DĨ - HÀNG/GIÁNG",
+    "nghia": "Sau đó, kể từ đó"
+  },
+  {
+    "STT": 224,
+    "kanji": "横断",
+    "hiragana": "おうだん",
+    "hanviet": "HOÀNH - ĐOẠN",
+    "nghia": "Băng qua"
+  },
+  {
+    "STT": 225,
+    "kanji": "合図",
+    "hiragana": "あいず",
+    "hanviet": "HỢP - ĐỒ",
+    "nghia": "Dấu hiệu, ra dấu"
+  },
+  {
+    "STT": 226,
+    "kanji": "出張",
+    "hiragana": "しゅっちょう",
+    "hanviet": "XUẤT - TRƯỜNG",
+    "nghia": "Đi công tác"
+  },
+  {
+    "STT": 227,
+    "kanji": "席",
+    "hiragana": "せき",
+    "hanviet": "TỊCH",
+    "nghia": "Chỗ ngồi"
+  },
+  {
+    "STT": 228,
+    "kanji": "根",
+    "hiragana": "ね",
+    "hanviet": "CĂN",
+    "nghia": "Rễ cây"
+  },
+  {
+    "STT": 229,
+    "kanji": "事情",
+    "hiragana": "じじょう",
+    "hanviet": "SỰ - TÌNH",
+    "nghia": "Sự tình, lí do"
+  },
+  {
+    "STT": 230,
+    "kanji": "通知",
+    "hiragana": "つうち",
+    "hanviet": "THÔNG - TRI",
+    "nghia": "Thông báo"
+  },
+  {
+    "STT": 231,
+    "kanji": "選手",
+    "hiragana": "せんしゅ",
+    "hanviet": "TUYỂN - THỦ",
+    "nghia": "Tuyển thủ, vận động viên"
+  },
+  {
+    "STT": 232,
+    "kanji": "実力",
+    "hiragana": "じつりょく",
+    "hanviet": "THỰC - LỰC",
+    "nghia": "Thực lực"
+  },
+  {
+    "STT": 233,
+    "kanji": "改札",
+    "hiragana": "かいさつ",
+    "hanviet": "CẢI - TRÁT",
+    "nghia": "Soát vé"
+  },
+  {
+    "STT": 234,
+    "kanji": "各地",
+    "hiragana": "かくち",
+    "hanviet": "CÁC - ĐỊA",
+    "nghia": "Các nơi, các vùng"
+  },
+  {
+    "STT": 235,
+    "kanji": "貯金",
+    "hiragana": "ちょきん",
+    "hanviet": "TRỮ - KIM",
+    "nghia": "Tiết kiệm tiền"
+  },
+  {
+    "STT": 236,
+    "kanji": "留守",
+    "hiragana": "るす",
+    "hanviet": "LƯU - THỦ",
+    "nghia": "Vắng nhà"
+  },
+  {
+    "STT": 237,
+    "kanji": "文章",
+    "hiragana": "ぶんしょう",
+    "hanviet": "VĂN - CHƯƠNG",
+    "nghia": "Đoạn văn, bài văn"
+  },
+  {
+    "STT": 238,
+    "kanji": "商業",
+    "hiragana": "しょうぎょう",
+    "hanviet": "THƯƠNG - NGHIỆP",
+    "nghia": "Thương mại"
+  },
+  {
+    "STT": 239,
+    "kanji": "広告",
+    "hiragana": "こうこく",
+    "hanviet": "QUẢNG - CÁO",
+    "nghia": "Quảng cáo"
+  },
+  {
+    "STT": 240,
+    "kanji": "相手",
+    "hiragana": "あいて",
+    "hanviet": "TƯƠNG - THỦ",
+    "nghia": "Đối phương, đối thủ"
+  },
+  {
+    "STT": 241,
+    "kanji": "大会",
+    "hiragana": "たいかい",
+    "hanviet": "ĐẠI - HỘI",
+    "nghia": "Đại hội"
+  },
+  {
+    "STT": 242,
+    "kanji": "集中",
+    "hiragana": "しゅうちゅう",
+    "hanviet": "TẬP - TRUNG",
+    "nghia": "Tập trung"
+  },
+  {
+    "STT": 243,
+    "kanji": "食器",
+    "hiragana": "しょっき",
+    "hanviet": "THỰC - KHÍ",
+    "nghia": "Dụng cụ ăn uống"
+  },
+  {
+    "STT": 244,
+    "kanji": "横",
+    "hiragana": "よこ",
+    "hanviet": "HOÀNH",
+    "nghia": "Bề ngang"
+  },
+  {
+    "STT": 245,
+    "kanji": "自然",
+    "hiragana": "しぜん",
+    "hanviet": "TỰ - NHIÊN",
+    "nghia": "Tự nhiên"
+  },
+  {
+    "STT": 246,
+    "kanji": "応用",
+    "hiragana": "おうよう",
+    "hanviet": "ỨNG - DỤNG",
+    "nghia": "Ứng dụng"
+  },
+  {
+    "STT": 247,
+    "kanji": "検査",
+    "hiragana": "けんさ",
+    "hanviet": "KIỂM - TRA",
+    "nghia": "Kiểm tra"
+  },
+  {
+    "STT": 248,
+    "kanji": "呼吸",
+    "hiragana": "こきゅう",
+    "hanviet": "HÔ - HẤP",
+    "nghia": "Hô hấp, hít thở"
+  },
+  {
+    "STT": 249,
+    "kanji": "想像",
+    "hiragana": "そうぞう",
+    "hanviet": "TƯỞNG - TƯỢNG",
+    "nghia": "Tưởng tượng"
+  },
+  {
+    "STT": 250,
+    "kanji": "朝食",
+    "hiragana": "ちょうしょく",
+    "hanviet": "TRIỀU - THỰC",
+    "nghia": "Bữa sáng"
+  },
+  {
+    "STT": 251,
+    "kanji": "首",
+    "hiragana": "くび",
+    "hanviet": "THỦ",
+    "nghia": "Cổ"
+  },
+  {
+    "STT": 252,
+    "kanji": "経営学",
+    "hiragana": "けいえいがく",
+    "hanviet": "KINH - DOANH - HỌC",
+    "nghia": "Kinh doanh học"
+  },
+  {
+    "STT": 253,
+    "kanji": "分類",
+    "hiragana": "ぶんるい",
+    "hanviet": "PHÂN - LOẠI",
+    "nghia": "Phân loại"
+  },
+  {
+    "STT": 254,
+    "kanji": "血液型",
+    "hiragana": "けつえきがた",
+    "hanviet": "HUYẾT - DỊCH - HÌNH",
+    "nghia": "Nhóm máu"
+  },
+  {
+    "STT": 255,
+    "kanji": "湖",
+    "hiragana": "みずうみ",
+    "hanviet": "HỒ",
+    "nghia": "Hồ"
+  },
+  {
+    "STT": 256,
+    "kanji": "変化",
+    "hiragana": "へんか",
+    "hanviet": "BIẾN - HÓA",
+    "nghia": "Sự thay đổi, biến hóa"
+  },
+  {
+    "STT": 257,
+    "kanji": "荷物",
+    "hiragana": "にもつ",
+    "hanviet": "HÀ - VẬT",
+    "nghia": "Hành lý"
+  },
+  {
+    "STT": 258,
+    "kanji": "平均",
+    "hiragana": "へいきん",
+    "hanviet": "BÌNH - QUÂN",
+    "nghia": "Trung bình"
+  },
+  {
+    "STT": 259,
+    "kanji": "支給",
+    "hiragana": "しきゅう",
+    "hanviet": "CHI - CẤP",
+    "nghia": "Cung cấp, chu cấp"
+  },
+  {
+    "STT": 260,
+    "kanji": "個人",
+    "hiragana": "こじん",
+    "hanviet": "CÁ - NHÂN",
+    "nghia": "Cá nhân"
+  },
+  {
+    "STT": 261,
+    "kanji": "方向",
+    "hiragana": "ほうこう",
+    "hanviet": "PHƯƠNG - HƯỚNG",
+    "nghia": "Phương hướng"
+  },
+  {
+    "STT": 262,
+    "kanji": "申し込み",
+    "hiragana": "もうしこみ",
+    "hanviet": "THÂN - VÀO",
+    "nghia": "Đăng ký"
+  },
+  {
+    "STT": 263,
+    "kanji": "独立",
+    "hiragana": "どくりつ",
+    "hanviet": "ĐỘC - LẬP",
+    "nghia": "Độc lập"
+  },
+  {
+    "STT": 264,
+    "kanji": "観客",
+    "hiragana": "かんきゃく",
+    "hanviet": "QUAN - KHÁCH",
+    "nghia": "Khán giả"
+  },
+  {
+    "STT": 265,
+    "kanji": "訓練",
+    "hiragana": "くんれん",
+    "hanviet": "HUẤN - LUYỆN",
+    "nghia": "Huấn luyện"
+  },
+  {
+    "STT": 266,
+    "kanji": "豆",
+    "hiragana": "まめ",
+    "hanviet": "ĐẬU",
+    "nghia": "Đậu, hạt đậu"
+  },
+  {
+    "STT": 267,
+    "kanji": "共通",
+    "hiragana": "きょうつう",
+    "hanviet": "CỘNG - THÔNG",
+    "nghia": "Chung, phổ thông"
+  },
+  {
+    "STT": 268,
+    "kanji": "税金",
+    "hiragana": "ぜいきん",
+    "hanviet": "THUẾ - KIM",
+    "nghia": "Thuế, tiền thuế"
+  },
+  {
+    "STT": 269,
+    "kanji": "商品",
+    "hiragana": "しょうひん",
+    "hanviet": "THƯƠNG - PHẨM",
+    "nghia": "Sản phẩm, hàng hóa"
+  },
+  {
+    "STT": 270,
+    "kanji": "早退",
+    "hiragana": "そうたい",
+    "hanviet": "TẢO - THOÁI",
+    "nghia": "Về sớm"
+  },
+  {
+    "STT": 271,
+    "kanji": "下線",
+    "hiragana": "かせん",
+    "hanviet": "HẠ - TUYẾN",
+    "nghia": "Gạch chân, đường gạch dưới"
+  },
+  {
+    "STT": 272,
+    "kanji": "位置",
+    "hiragana": "いち",
+    "hanviet": "VỊ - TRÍ",
+    "nghia": "Vị trí"
+  },
+  {
+    "STT": 273,
+    "kanji": "計算",
+    "hiragana": "けいさん",
+    "hanviet": "KẾ - TOÁN",
+    "nghia": "Tính toán"
+  },
+  {
+    "STT": 274,
+    "kanji": "手術",
+    "hiragana": "しゅじゅつ",
+    "hanviet": "THỦ - THUẬT",
+    "nghia": "Phẫu thuật"
+  },
+  {
+    "STT": 275,
+    "kanji": "禁煙",
+    "hiragana": "きんえん",
+    "hanviet": "CẤM - YÊN",
+    "nghia": "Cấm hút thuốc"
+  },
+  {
+    "STT": 276,
+    "kanji": "塩",
+    "hiragana": "しお",
+    "hanviet": "DIÊM",
+    "nghia": "Muối"
+  },
+  {
+    "STT": 277,
+    "kanji": "命令",
+    "hiragana": "めいれい",
+    "hanviet": "MỆNH - LỆNH",
+    "nghia": "Mệnh lệnh"
+  },
+  {
+    "STT": 278,
+    "kanji": "機械",
+    "hiragana": "きかい",
+    "hanviet": "CƠ - GIỚI",
+    "nghia": "Máy móc"
+  },
+  {
+    "STT": 279,
+    "kanji": "休日",
+    "hiragana": "きゅうじつ",
+    "hanviet": "HƯU - NHẬT",
+    "nghia": "Ngày nghỉ"
+  },
+  {
+    "STT": 280,
+    "kanji": "部分",
+    "hiragana": "ぶぶん",
+    "hanviet": "BỘ - PHẬN",
+    "nghia": "Bộ phận, phần"
+  },
+  {
+    "STT": 281,
+    "kanji": "相談",
+    "hiragana": "そうだん",
+    "hanviet": "TƯƠNG - ĐÀM",
+    "nghia": "Trao đổi, thảo luận"
+  },
+  {
+    "STT": 282,
+    "kanji": "制服",
+    "hiragana": "せいふく",
+    "hanviet": "CHẾ - PHỤC",
+    "nghia": "Đồng phục"
+  },
+  {
+    "STT": 283,
+    "kanji": "血圧",
+    "hiragana": "けつあつ",
+    "hanviet": "HUYẾT - ÁP",
+    "nghia": "Huyết áp"
+  },
+  {
+    "STT": 284,
+    "kanji": "線",
+    "hiragana": "せん",
+    "hanviet": "TUYẾN",
+    "nghia": "Đường kẻ, tuyến đường"
+  },
+  {
+    "STT": 285,
+    "kanji": "調査",
+    "hiragana": "ちょうさ",
+    "hanviet": "ĐIỀU - TRA",
+    "nghia": "Điều tra"
+  },
+  {
+    "STT": 286,
+    "kanji": "郵便",
+    "hiragana": "ゆうびん",
+    "hanviet": "BƯU - TIỆN",
+    "nghia": "Bưu điện, thư tín"
+  },
+  {
+    "STT": 287,
+    "kanji": "腰",
+    "hiragana": "こし",
+    "hanviet": "YÊU",
+    "nghia": "Eo, hông"
+  },
+  {
+    "STT": 288,
+    "kanji": "方角",
+    "hiragana": "ほうがく",
+    "hanviet": "PHƯƠNG - GIÁC",
+    "nghia": "Phương hướng, phương vị"
+  },
+  {
+    "STT": 289,
+    "kanji": "昼食",
+    "hiragana": "ちゅうしょく",
+    "hanviet": "TRÚ - THỰC",
+    "nghia": "Bữa trưa"
+  },
+  {
+    "STT": 290,
+    "kanji": "予約",
+    "hiragana": "よやく",
+    "hanviet": "DỰ - ƯỚC",
+    "nghia": "Đặt trước, hẹn trước"
+  },
+  {
+    "STT": 291,
+    "kanji": "未来",
+    "hiragana": "みらい",
+    "hanviet": "VỊ - LAI",
+    "nghia": "Tương lai"
+  },
+  {
+    "STT": 292,
+    "kanji": "各駅",
+    "hiragana": "かくえき",
+    "hanviet": "CÁC - DỊCH",
+    "nghia": "Mỗi ga, các ga"
+  },
+  {
+    "STT": 293,
+    "kanji": "印象",
+    "hiragana": "いんしょう",
+    "hanviet": "ẤN - TƯỢNG",
+    "nghia": "Ấn tượng"
+  },
+  {
+    "STT": 294,
+    "kanji": "種類",
+    "hiragana": "しゅるい",
+    "hanviet": "CHỦNG - LOẠI",
+    "nghia": "Chủng loại"
+  },
+  {
+    "STT": 295,
+    "kanji": "交流",
+    "hiragana": "こうりゅう",
+    "hanviet": "GIAO - LƯU",
+    "nghia": "Giao lưu"
+  },
+  {
+    "STT": 296,
+    "kanji": "包む",
+    "hiragana": "つつむ",
+    "hanviet": "BAO",
+    "nghia": "Bọc, gói"
+  },
+  {
+    "STT": 297,
+    "kanji": "表す",
+    "hiragana": "あらわす",
+    "hanviet": "BIỂU",
+    "nghia": "Biểu thị, biểu hiện, thể hiện"
+  },
+  {
+    "STT": 298,
+    "kanji": "遅れる",
+    "hiragana": "おくれる",
+    "hanviet": "TRÌ",
+    "nghia": "Chậm, muộn, trễ"
+  },
+  {
+    "STT": 299,
+    "kanji": "折る",
+    "hiragana": "おる",
+    "hanviet": "CHIẾT",
+    "nghia": "Bẻ, gập, gấp"
+  },
+  {
+    "STT": 300,
+    "kanji": "返す",
+    "hiragana": "かえす",
+    "hanviet": "PHẢN",
+    "nghia": "Trả lại"
+  },
+  {
+    "STT": 301,
+    "kanji": "配る",
+    "hiragana": "くばる",
+    "hanviet": "PHỐI",
+    "nghia": "Phân phát, giao"
+  },
+  {
+    "STT": 302,
+    "kanji": "困る",
+    "hiragana": "こまる",
+    "hanviet": "KHỐN",
+    "nghia": "Khó khăn, bối rối"
+  },
+  {
+    "STT": 303,
+    "kanji": "示す",
+    "hiragana": "しめす",
+    "hanviet": "THỊ",
+    "nghia": "Chỉ, cho thấy, xuất trình"
+  },
+  {
+    "STT": 304,
+    "kanji": "生える",
+    "hiragana": "はえる",
+    "hanviet": "SINH",
+    "nghia": "Mọc (răng, cỏ)"
+  },
+  {
+    "STT": 305,
+    "kanji": "笑う",
+    "hiragana": "わらう",
+    "hanviet": "TIẾU",
+    "nghia": "Cười"
+  },
+  {
+    "STT": 306,
+    "kanji": "覚える",
+    "hiragana": "おぼえる",
+    "hanviet": "GIÁC",
+    "nghia": "Nhớ, học thuộc"
+  },
+  {
+    "STT": 307,
+    "kanji": "割れる",
+    "hiragana": "われる",
+    "hanviet": "CÁT",
+    "nghia": "Vỡ, bể"
+  },
+  {
+    "STT": 308,
+    "kanji": "替える",
+    "hiragana": "かえる",
+    "hanviet": "THẾ",
+    "nghia": "Thay thế, đổi"
+  },
+  {
+    "STT": 309,
+    "kanji": "汚れる",
+    "hiragana": "よごれる",
+    "hanviet": "Ô",
+    "nghia": "Bị bẩn"
+  },
+  {
+    "STT": 310,
+    "kanji": "干す",
+    "hiragana": "ほす",
+    "hanviet": "CAN",
+    "nghia": "Phơi, hong khô"
+  },
+  {
+    "STT": 311,
+    "kanji": "伝える",
+    "hiragana": "つたえる",
+    "hanviet": "TRUYỀN",
+    "nghia": "Truyền đạt, nhắn lại"
+  },
+  {
+    "STT": 312,
+    "kanji": "測る",
+    "hiragana": "はかる",
+    "hanviet": "TRẮC",
+    "nghia": "Đo, đo đạc"
+  },
+  {
+    "STT": 313,
+    "kanji": "折れる",
+    "hiragana": "おれる",
+    "hanviet": "CHIẾT",
+    "nghia": "Bị gãy, bị bẻ"
+  },
+  {
+    "STT": 314,
+    "kanji": "払う",
+    "hiragana": "はらう",
+    "hanviet": "PHẤT",
+    "nghia": "Trả, chi trả"
+  },
+  {
+    "STT": 315,
+    "kanji": "加える",
+    "hiragana": "くわえる",
+    "hanviet": "GIA",
+    "nghia": "Thêm vào, gia tăng"
+  },
+  {
+    "STT": 316,
+    "kanji": "冷える",
+    "hiragana": "ひえる",
+    "hanviet": "LÃNH",
+    "nghia": "Lạnh đi, nguội đi"
+  },
+  {
+    "STT": 317,
+    "kanji": "転ぶ",
+    "hiragana": "ころぶ",
+    "hanviet": "CHUYỂN",
+    "nghia": "Ngã, té, lăn"
+  },
+  {
+    "STT": 318,
+    "kanji": "燃える",
+    "hiragana": "もえる",
+    "hanviet": "NHIÊN",
+    "nghia": "Cháy, bốc cháy"
+  },
+  {
+    "STT": 319,
+    "kanji": "回す",
+    "hiragana": "まわす",
+    "hanviet": "HỒI",
+    "nghia": "Xoay, vặn, chuyền tay"
+  },
+  {
+    "STT": 320,
+    "kanji": "結ぶ",
+    "hiragana": "むすぶ",
+    "hanviet": "KẾT",
+    "nghia": "Buộc, kết nối, ký (hợp đồng)"
+  },
+  {
+    "STT": 321,
+    "kanji": "疑う",
+    "hiragana": "うたがう",
+    "hanviet": "NGHI",
+    "nghia": "Nghi ngờ, hoài nghi"
+  },
+  {
+    "STT": 322,
+    "kanji": "遊ぶ",
+    "hiragana": "あそぶ",
+    "hanviet": "DU",
+    "nghia": "Chơi, vui chơi"
+  },
+  {
+    "STT": 323,
+    "kanji": "換える",
+    "hiragana": "かえる",
+    "hanviet": "HOÁN",
+    "nghia": "Đổi, trao đổi"
+  },
+  {
+    "STT": 324,
+    "kanji": "助ける",
+    "hiragana": "たすける",
+    "hanviet": "TRỢ",
+    "nghia": "Giúp đỡ, cứu"
+  },
+  {
+    "STT": 325,
+    "kanji": "勝つ",
+    "hiragana": "かつ",
+    "hanviet": "THẮNG",
+    "nghia": "Thắng, chiến thắng"
+  },
+  {
+    "STT": 326,
+    "kanji": "預ける",
+    "hiragana": "あずける",
+    "hanviet": "DỰ",
+    "nghia": "Gửi, giao phó"
+  },
+  {
+    "STT": 327,
+    "kanji": "得意",
+    "hiragana": "とくい",
+    "hanviet": "ĐẮC - Ý",
+    "nghia": "Giỏi, đắc ý, tâm đắc"
+  },
+  {
+    "STT": 328,
+    "kanji": "深い",
+    "hiragana": "ふかい",
+    "hanviet": "THÂM",
+    "nghia": "Sâu, sâu sắc"
+  },
+  {
+    "STT": 329,
+    "kanji": "固い",
+    "hiragana": "かたい",
+    "hanviet": "CỐ",
+    "nghia": "Cứng, vững chắc"
+  },
+  {
+    "STT": 330,
+    "kanji": "短い",
+    "hiragana": "みじかい",
+    "hanviet": "ĐOẢN",
+    "nghia": "Ngắn"
+  },
+  {
+    "STT": 331,
+    "kanji": "苦しい",
+    "hiragana": "くるしい",
+    "hanviet": "KHỔ",
+    "nghia": "Đau khổ, khó khăn"
+  },
+  {
+    "STT": 332,
+    "kanji": "浅い",
+    "hiragana": "あさい",
+    "hanviet": "THIỂN",
+    "nghia": "Nông, cạn"
+  },
+  {
+    "STT": 333,
+    "kanji": "一般的",
+    "hiragana": "いっぱんてき",
+    "hanviet": "NHẤT - BAN - ĐÍCH",
+    "nghia": "Phổ biến, chung"
+  },
+  {
+    "STT": 334,
+    "kanji": "厚い",
+    "hiragana": "あつい",
+    "hanviet": "HẬU",
+    "nghia": "Dày"
+  },
+  {
+    "STT": 335,
+    "kanji": "美しい",
+    "hiragana": "うつくしい",
+    "hanviet": "MỸ",
+    "nghia": "Đẹp"
+  },
+  {
+    "STT": 336,
+    "kanji": "丸い",
+    "hiragana": "まるい",
+    "hanviet": "HOÀN",
+    "nghia": "Tròn"
+  },
+  {
+    "STT": 337,
+    "kanji": "汚い",
+    "hiragana": "きたない",
+    "hanviet": "Ô",
+    "nghia": "Bẩn"
+  },
+  {
+    "STT": 338,
+    "kanji": "主要",
+    "hiragana": "しゅよう",
+    "hanviet": "CHỦ - YẾU",
+    "nghia": "Chủ yếu, chính"
+  },
+  {
+    "STT": 339,
+    "kanji": "恋しい",
+    "hiragana": "こいしい",
+    "hanviet": "LUYẾN",
+    "nghia": "Yêu dấu, nhớ nhung"
+  },
+  {
+    "STT": 340,
+    "kanji": "確か",
+    "hiragana": "たしか",
+    "hanviet": "XÁC",
+    "nghia": "Chắc chắn, chính xác"
+  },
+  {
+    "STT": 341,
+    "kanji": "遅い",
+    "hiragana": "おそい",
+    "hanviet": "TRÌ",
+    "nghia": "Chậm, muộn"
+  },
+  {
+    "STT": 342,
+    "kanji": "若い",
+    "hiragana": "わかい",
+    "hanviet": "NHƯỢC",
+    "nghia": "Trẻ"
+  },
+  {
+    "STT": 343,
+    "kanji": "上品",
+    "hiragana": "じょうひん",
+    "hanviet": "THƯỢNG - PHẨM",
+    "nghia": "Tao nhã, lịch sự, trang nhã"
+  },
+  {
+    "STT": 344,
+    "kanji": "普通",
+    "hiragana": "ふつう",
+    "hanviet": "PHỔ - THÔNG",
+    "nghia": "Bình thường, thông thường"
+  },
+  {
+    "STT": 345,
+    "kanji": "直接",
+    "hiragana": "ちょくせつ",
+    "hanviet": "TRỰC - TIẾP",
+    "nghia": "Trực tiếp"
   }
 ]

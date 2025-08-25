@@ -299,3 +299,54 @@ h2 {
     padding: 0.8rem 0.6rem;
   }
 }
+
+.tabs {
+  display: flex;
+  justify-content: center; /* căn giữa theo ngang */
+  gap: 10px;               /* khoảng cách giữa các tab */
+  margin: 20px 0;          /* khoảng cách trên dưới */
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #2196f3;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+  background: #2196f3;
+  color: white;
+}
+
+.tab-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.lesson-btn {
+  padding: 10px;
+  border: none;           /* bỏ viền nếu muốn nhìn gọn */
+  border-radius: 5px;
+  cursor: pointer;
+  background: #0288d1;    /* màu nền đậm hơn */
+  color: white;           /* chữ màu trắng */
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.lesson-btn:hover {
+  background: #00bcd4;    /* hover đổi màu cyan sáng */
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tab-content {
+    grid-template-columns: 1fr;
+  }
+}
