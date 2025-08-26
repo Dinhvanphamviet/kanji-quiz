@@ -1,7 +1,3 @@
-/* =========================
-   TRANG CHỌN UNIT - kanji.html
-========================= */
-
 const kanjiPerLesson = 20;
 
 async function loadKanjiUnits() {
@@ -65,9 +61,15 @@ async function loadKanjiUnits() {
             const start = i * kanjiPerLesson;
             const end = Math.min(start + kanjiPerLesson, kanjiList.length);
 
-            btn.onclick = () => {
-              window.location.href = `kanji-quiz.html?unit=${unitId}&start=${start}&end=${end}`;
-            };
+            // Nếu là unit mặc định (ví dụ unit 6), vào quiz luôn với chế độ Kanji ➝ Hiragana
+            if (parseInt(unitId) === 6) {
+              btn.onclick = () => {
+                window.location.href = `kanji-quiz.html?unit=${unitId}&start=${start}&end=${end}&mode=kanji-hiragana`;
+              };
+            } else {
+              // Popup chọn chế độ quiz
+              btn.onclick = () => showKanjiModeSelection(unitId, start, end);
+            }
 
             lessonList.appendChild(btn);
           }
@@ -79,6 +81,35 @@ async function loadKanjiUnits() {
   } catch (err) {
     console.error("Lỗi load kanji.json:", err);
   }
+}
+
+// Popup chọn mode quiz cho Kanji
+function showKanjiModeSelection(unitId, start, end) {
+  const overlay = document.createElement("div");
+  overlay.className = "overlay fixed inset-0 bg-black/50 flex items-center justify-center z-50";
+
+  const box = document.createElement("div");
+  box.className = "mode-box bg-white rounded-xl p-6 shadow-lg flex flex-col gap-3";
+
+  box.innerHTML = `
+    <h3 class="text-lg font-semibold mb-2">Chọn dạng Quiz</h3>
+    <button class="mode-btn px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" data-mode="kanji-hiragana">Kanji ➝ Hiragana</button>
+    <button class="mode-btn px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" data-mode="hiragana-kanji">Hiragana ➝ Kanji</button>
+    <button class="mode-btn px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" data-mode="kanji-meaning">Kanji ➝ Nghĩa</button>
+    <button class="mode-cancel px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 transition mt-2">Hủy</button>
+  `;
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+
+  box.querySelectorAll(".mode-btn").forEach(btn => {
+    btn.onclick = () => {
+      const mode = btn.dataset.mode;
+      window.location.href = `kanji-quiz.html?unit=${unitId}&start=${start}&end=${end}&mode=${mode}`;
+    };
+  });
+
+  box.querySelector(".mode-cancel").onclick = () => document.body.removeChild(overlay);
 }
 
 if (window.location.pathname.endsWith("kanji.html")) {

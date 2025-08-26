@@ -1,12 +1,9 @@
-/* =========================
-   DỮ LIỆU QUIZ - Kanji
-========================= */
-
 let kanjiQuestions = [];
 let kanjiIndex = 0;
 let correctCount = 0;
 let wrongCount = 0;
 let answered = false;
+let mode = "kanji-hiragana"; // chế độ mặc định
 
 // Trộn mảng
 function shuffleArray(arr) {
@@ -22,14 +19,11 @@ async function loadKanjiQuiz() {
   const unit = parseInt(params.get("unit"));
   const start = parseInt(params.get("start")) || 0;
   const end = parseInt(params.get("end")) || 20;
-
-  console.log("Unit:", unit, "Start:", start, "End:", end);
+  mode = params.get("mode") || "kanji-hiragana";
 
   try {
     const res = await fetch("kanji.json");
     const data = await res.json();
-    console.log("Data loaded:", data.length);
-
     kanjiQuestions = data.filter(q => q.unit === unit).slice(start, end);
     shuffleArray(kanjiQuestions);
 
@@ -63,40 +57,50 @@ function loadKanjiQuestion() {
   }
 
   const q = kanjiQuestions[kanjiIndex];
-  qTitle.innerText = `(${kanjiIndex + 1}) ${q.kanji}`;
+
+  // Xác định câu hỏi hiển thị theo mode
+  let questionText = "";
+  if (mode === "kanji-hiragana") questionText = q.kanji;
+  else if (mode === "hiragana-kanji") questionText = q.hiragana;
+  else if (mode === "kanji-meaning") questionText = q.kanji;
+
+  qTitle.innerText = `(${kanjiIndex + 1}) ${questionText}`;
   resultDiv.innerText = "";
   fullInfo.style.display = "none";
   fullInfo.innerHTML = "";
   nextBtn.style.display = "none";
   answered = false;
 
-  // Tạo 4 đáp án (hiragana)
-  let options = [q.hiragana];
+  // Tạo 4 đáp án
+  let correctAnswer = "";
+  if (mode === "kanji-hiragana") correctAnswer = q.hiragana;
+  else if (mode === "hiragana-kanji") correctAnswer = q.kanji;
+  else if (mode === "kanji-meaning") correctAnswer = q.nghia;
+
+  let options = [correctAnswer];
   while (options.length < 4) {
-    let r = kanjiQuestions[Math.floor(Math.random() * kanjiQuestions.length)].hiragana;
-    if (!options.includes(r)) options.push(r);
+    let rand = kanjiQuestions[Math.floor(Math.random() * kanjiQuestions.length)];
+    let candidate = "";
+    if (mode === "kanji-hiragana") candidate = rand.hiragana;
+    else if (mode === "hiragana-kanji") candidate = rand.kanji;
+    else if (mode === "kanji-meaning") candidate = rand.nghia;
+
+    if (!options.includes(candidate)) options.push(candidate);
   }
   shuffleArray(options);
 
   optionsDiv.innerHTML = "";
   optionsDiv.style.display = "grid";
-  optionsDiv.style.gridTemplateColumns = "repeat(2, 1fr)"; // desktop 2 cột
-  optionsDiv.style.gap = "12px"; // khoảng cách giữa các nút
-  optionsDiv.style.marginTop = "8px";
-
-  // Responsive: mobile < 640px thì 1 cột
-  if (window.innerWidth < 640) {
-    optionsDiv.style.gridTemplateColumns = "1fr";
-  }
+  optionsDiv.style.gridTemplateColumns = window.innerWidth < 640 ? "1fr" : "repeat(2, 1fr)";
+  optionsDiv.style.gap = "12px";
 
   options.forEach(opt => {
-  const btn = document.createElement("button");
-  btn.textContent = opt;
-  btn.className = "option-btn px-4 py-2 bg-indigo-100 text-indigo-800 rounded hover:bg-indigo-200 transition text-xl font-semibold";
-  btn.onclick = () => checkKanjiAnswer(opt, q);
-  optionsDiv.appendChild(btn);
-});
-
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.className = "option-btn px-4 py-2 bg-indigo-100 text-indigo-800 rounded hover:bg-indigo-200 transition text-xl font-semibold";
+    btn.onclick = () => checkKanjiAnswer(opt, q);
+    optionsDiv.appendChild(btn);
+  });
 }
 
 // Kiểm tra đáp án
@@ -105,8 +109,13 @@ function checkKanjiAnswer(answer, q) {
   const fullInfo = document.getElementById("kanji-full-info");
   const nextBtn = document.getElementById("kanji-next-btn");
 
+  let correctAnswer = "";
+  if (mode === "kanji-hiragana") correctAnswer = q.hiragana;
+  else if (mode === "hiragana-kanji") correctAnswer = q.kanji;
+  else if (mode === "kanji-meaning") correctAnswer = q.nghia;
+
   if (!answered) {
-    if (answer === q.hiragana) {
+    if (answer === correctAnswer) {
       correctCount++;
       resultDiv.innerText = "✅ Chính xác!";
       resultDiv.style.color = "green";
@@ -136,23 +145,18 @@ function nextKanjiQuestion() {
 
 // Nút điều hướng linh hoạt
 function goBack() {
-  const nextBtn = document.getElementById("kanji-next-btn");
   if (kanjiIndex === 0) {
-    // Câu đầu tiên → về Unit
     window.location.href = "kanji.html";
   } else {
-    // Các câu sau → quay lại câu trước
     kanjiIndex--;
     loadKanjiQuestion();
   }
 }
 
-
 // Chỉ chạy khi ở kanji-quiz.html
 if (window.location.pathname.endsWith("kanji-quiz.html")) {
   loadKanjiQuiz();
 
-  // Nếu resize màn hình thì update layout đáp án
   window.addEventListener("resize", () => {
     const optionsDiv = document.getElementById("kanji-options");
     if (optionsDiv) {
