@@ -79,8 +79,14 @@ async function loadVocabUnits() {
   }
 }
 
-// Popup chọn mode quiz
 function showModeSelection(unitId, start, end) {
+  // Unit 6 → vào luôn dạng hiragana ➝ nghĩa
+  if (unitId == 6) {
+    window.location.href = `vocab-quiz.html?unit=${unitId}&start=${start}&end=${end}&mode=hiragana-meaning`;
+    return; // thoát khỏi hàm
+  }
+
+  // Các unit khác → hiển thị popup chọn mode
   const overlay = document.createElement("div");
   overlay.className = "overlay fixed inset-0 bg-black/50 flex items-center justify-center z-50";
 
@@ -107,6 +113,7 @@ function showModeSelection(unitId, start, end) {
 
   box.querySelector(".mode-cancel").onclick = () => document.body.removeChild(overlay);
 }
+
 
 if (window.location.pathname.endsWith("vocab.html")) {
   loadVocabUnits();
