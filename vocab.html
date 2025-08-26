@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Chủ - Học Tiếng Nhật</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📘 Vocab Quiz</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
 </head>
 <body class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
+
   <!-- Header -->
   <header class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-2xl font-bold text-indigo-600 cursor-pointer" onclick="window.location.href='index.html'">
-        日本語 Learning
-      </h1>
-      
+        <h1 class="text-2xl font-bold text-indigo-600 cursor-pointer" onclick="window.location.href='index.html'">
+            日本語 Learning
+        </h1>
       <!-- Menu desktop -->
       <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
         <a href="index.html" class="hover:text-indigo-500">Trang Chủ</a>
         <a href="kanji.html" class="hover:text-indigo-500">Kanji Quiz</a>
-        <a href="vocab.html" class="hover:text-indigo-500">Vocab Quiz</a>
+        <a href="vocab.html" class="hover:text-indigo-500 text-indigo-600 font-semibold">Vocab Quiz</a>
       </nav>
 
       <!-- Nút menu mobile -->
@@ -28,46 +27,20 @@
 
     <!-- Menu mobile dạng dropdown -->
     <div id="mobileMenu" 
-        class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
+         class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
       <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Trang Chủ</a>
       <a href="kanji.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Kanji Quiz</a>
       <a href="vocab.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Vocab Quiz</a>
     </div>
   </header>
 
-  
+  <!-- Main Section -->
+  <section class="flex-1 flex flex-col items-center justify-center text-center px-4 pt-28 pb-16">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6">Luyện Vocab Theo Unit</h1>
 
-  <!-- Hero Section -->
-  <section class="flex-1 flex items-center justify-center text-center px-6 pt-24 pb-16">
-    <div class="max-w-3xl">
-      <h2 class="text-4xl md:text-6xl font-extrabold text-gray-800 animate__animated animate__fadeInDown">
-        Học <span class="text-indigo-600">Kanji</span> & <span class="text-pink-600">Vocabulary</span> hiệu quả
-      </h2>
-      <p class="mt-6 text-lg text-gray-600 animate__animated animate__fadeInUp">
-        Luyện tập ghi nhớ từ vựng và Kanji thông qua hệ thống bài học hiện đại, giao diện thân thiện, và trải nghiệm trực quan.
-      </p>
-      <div class="mt-8 flex justify-center gap-6">
-        <a href="kanji.html" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition">Bắt đầu Kanji</a>
-        <a href="vocab.html" class="px-6 py-3 rounded-xl bg-pink-600 text-white font-semibold shadow-lg hover:bg-pink-700 transition">Bắt đầu Vocabulary</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Feature Section -->
-  <section class="bg-white py-16">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6">
-      <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-2xl shadow hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-indigo-700">Kanji Quiz</h3>
-        <p class="mt-2 text-gray-600">Ôn luyện Kanji theo từng Unit, chia nhỏ bài học dễ tiếp thu.</p>
-      </div>
-      <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-2xl shadow hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-pink-700">Vocabulary Quiz</h3>
-        <p class="mt-2 text-gray-600">Học từ vựng với nhiều chế độ làm bài: Flashcard, Multiple-choice, Practice.</p>
-      </div>
-      <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl shadow hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-purple-700">Thống kê kết quả</h3>
-        <p class="mt-2 text-gray-600">Theo dõi tiến trình học tập, cải thiện từng ngày.</p>
-      </div>
+    <!-- Unit Grid -->
+    <div class="unit-grid flex flex-col gap-4 px-2 md:grid md:grid-cols-3 md:gap-6 max-w-6xl w-full" id="vocab-unit-grid">
+      <!-- Cards sẽ sinh ra bằng JS -->
     </div>
   </section>
 
@@ -113,19 +86,14 @@
 </footer>
 
 
-
-
-
-
-
-  <!-- Script mobile menu -->
+  <script src="vocab.js"></script>
   <script>
+    // Mobile menu toggle
     const menuBtn = document.getElementById("menuBtn");
     const mobileMenu = document.getElementById("mobileMenu");
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
   </script>
-
 </body>
 </html>

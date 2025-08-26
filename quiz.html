@@ -3,22 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Làm Quiz</title>
+  <title>Làm Quiz - Vocab</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="quiz-container">
-    <!-- nút quay lại -->
-    <button onclick="goHome()" class="home-btn">🏠 Trang chủ</button>
+    <!-- Nút quay lại Unit -->
+    <button onclick="goVocabHome()" class="home-btn">🏠 Về Unit</button>
 
-    <h1 id="question-title"></h1>
-    <div id="options" class="options"></div>
-    <div id="result"></div>
-    <div id="full-info" class="info-box"></div>
+    <!-- Câu hỏi -->
+    <h1 id="vocab-question-title">Đang tải câu hỏi...</h1>
 
-    <button onclick="nextQuestion()" id="next-btn" class="next-btn">Câu tiếp theo</button>
+    <!-- Các đáp án -->
+    <div id="vocab-options" class="options"></div>
+
+    <!-- Kết quả -->
+    <div id="vocab-result" class="result"></div>
+
+    <!-- Thông tin chi tiết -->
+    <div id="vocab-full-info" class="info-box"></div>
+
+    <!-- Điều khiển -->
+    <button onclick="nextVocabQuestion()" id="vocab-next-btn" class="next-btn" style="display:none;">
+      ➡️ Câu tiếp theo
+    </button>
   </div>
 
-  <script src="script.js"></script>
+  <script src="vocab.js"></script>
 </body>
 </html>

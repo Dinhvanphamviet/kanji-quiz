@@ -38,15 +38,15 @@ h2 {
   color: #555;
 }
 
-/* Nút chọn bài */
-/* ---------------- Trang chủ ---------------- */
+/* ---------------- Lesson List ---------------- */
 .lesson-list {
   display: grid;
   gap: 20px;
   margin-top: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* desktop/tablet */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* desktop/tablet linh hoạt */
 }
 
+/* Nút bài */
 .lesson-btn {
   background: linear-gradient(135deg, #42a5f5, #1e88e5);
   color: white;
@@ -65,10 +65,10 @@ h2 {
   transform: translateY(-2px);
 }
 
-/* Responsive cho tablet */
+/* Tablet */
 @media (max-width: 768px) {
   .lesson-list {
-    grid-template-columns: repeat(2, 1fr); /* 2 nút mỗi hàng */
+    grid-template-columns: repeat(2, 1fr); /* 2 bài mỗi hàng */
     gap: 15px;
   }
   .lesson-btn {
@@ -77,10 +77,10 @@ h2 {
   }
 }
 
-/* Responsive cho mobile */
+/* Mobile */
 @media (max-width: 480px) {
   .lesson-list {
-    grid-template-columns: 1fr; /* 1 nút mỗi hàng */
+    grid-template-columns: repeat(3, 1fr); /* 3 bài mỗi hàng */
     gap: 10px;
   }
   .lesson-btn {
@@ -88,6 +88,7 @@ h2 {
     padding: 14px;
   }
 }
+
 
 
 /* ---------------- Quiz ---------------- */
@@ -360,3 +361,306 @@ h2 {
   margin-top: 20px;
   border-top: 1px solid #ddd;
 }
+/* ---------------- Vocab Page (Unit Cards) ---------------- */
+.unit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.unit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.unit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.unit-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #0288d1;
+}
+
+.unit-info {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.detail-btn {
+  border: 1px solid #0288d1;
+  background: #fff;
+  color: #0288d1;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.detail-btn:hover {
+  background: #0288d1;
+  color: white;
+}
+
+.lesson-list {
+  margin-top: 12px;
+  display: none;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lesson-list.active {
+  display: flex;
+}
+
+.lesson-btn {
+  flex: 1 0 45%;
+  background: #42a5f5;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border: none;
+  transition: background 0.2s;
+}
+
+.lesson-btn:hover {
+  background: #1e88e5;
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+  .unit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-btn {
+    flex: 1 0 100%;
+  }
+}
+
+/* ---------------- Header Pro ---------------- */
+header {
+  width: 100%;
+  background: white;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Logo */
+header .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e88e5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header .logo span {
+  font-size: 1.8rem;
+}
+
+/* Nav */
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.2s ease;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #1e88e5;
+  transition: width 0.3s ease;
+}
+
+header nav a:hover {
+  color: #1e88e5;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+/* Responsive - Mobile Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  header nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+.unit-grid {
+  display: grid;
+  gap: 25px;
+  margin-top: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* Với màn hình lớn (>= 1200px): 4 unit / hàng */
+@media (min-width: 1200px) {
+  .unit-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Với màn hình trung bình (>= 900px): 3 unit / hàng */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .unit-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Với màn hình tablet (>= 600px): 2 unit / hàng */
+@media (min-width: 600px) and (max-width: 899px) {
+  .unit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Với màn hình nhỏ hơn 600px: 1 unit / hàng */
+@media (max-width: 599px) {
+  .unit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Popup chọn mode */
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.mode-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+.mode-box h3 {
+  margin-bottom: 15px;
+}
+
+.mode-btn, .mode-cancel {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.mode-btn {
+  background: #42a5f5;
+  color: white;
+}
+
+.mode-btn:hover {
+  background: #1e88e5;
+}
+
+.mode-cancel {
+  background: #ccc;
+}
+
+.mode-cancel:hover {
+  background: #aaa;
+}
+
+/* Floating Back Button */
+.floating-back-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ff7043, #f4511e);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  z-index: 1000; /* luôn nổi trên cùng */
+}
+
+.floating-back-btn:hover {
+  background: linear-gradient(135deg, #f4511e, #d84315);
+  transform: scale(1.05) translateY(-2px);
+}
+
+
