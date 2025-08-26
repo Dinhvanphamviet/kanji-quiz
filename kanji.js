@@ -1,3 +1,7 @@
+/* =========================
+   TRANG CHỌN UNIT - kanji.html
+========================= */
+
 const kanjiPerLesson = 20;
 
 async function loadKanjiUnits() {
@@ -61,15 +65,8 @@ async function loadKanjiUnits() {
             const start = i * kanjiPerLesson;
             const end = Math.min(start + kanjiPerLesson, kanjiList.length);
 
-            // Nếu là unit mặc định (ví dụ unit 6), vào quiz luôn với chế độ Kanji ➝ Hiragana
-            if (parseInt(unitId) === 6) {
-              btn.onclick = () => {
-                window.location.href = `kanji-quiz.html?unit=${unitId}&start=${start}&end=${end}&mode=kanji-hiragana`;
-              };
-            } else {
-              // Popup chọn chế độ quiz
-              btn.onclick = () => showKanjiModeSelection(unitId, start, end);
-            }
+            // Tất cả unit đều hiện popup chọn chế độ
+            btn.onclick = () => showKanjiModeSelection(unitId, start, end);
 
             lessonList.appendChild(btn);
           }
@@ -84,7 +81,7 @@ async function loadKanjiUnits() {
 }
 
 // Popup chọn mode quiz cho Kanji
-function showKanjiModeSelection(unitId, start, end) {
+function showKanjiModeSelection(unitId, start, end, defaultMode = "kanji-hiragana") {
   const overlay = document.createElement("div");
   overlay.className = "overlay fixed inset-0 bg-black/50 flex items-center justify-center z-50";
 
@@ -101,6 +98,10 @@ function showKanjiModeSelection(unitId, start, end) {
 
   overlay.appendChild(box);
   document.body.appendChild(overlay);
+
+  // Highlight nút mặc định
+  const defaultBtn = box.querySelector(`.mode-btn[data-mode="${defaultMode}"]`);
+  if (defaultBtn) defaultBtn.style.border = "2px solid yellow";
 
   box.querySelectorAll(".mode-btn").forEach(btn => {
     btn.onclick = () => {
