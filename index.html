@@ -6,126 +6,170 @@
   <title>Trang Chủ - Học Tiếng Nhật</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+  <!-- Lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
 </head>
 <body class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
+
   <!-- Header -->
   <header class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-2xl font-bold text-indigo-600 cursor-pointer" onclick="window.location.href='index.html'">
         日本語 Learning
       </h1>
-      
-      <!-- Menu desktop -->
       <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
         <a href="index.html" class="hover:text-indigo-500">Trang Chủ</a>
         <a href="kanji.html" class="hover:text-indigo-500">Kanji Quiz</a>
         <a href="vocab.html" class="hover:text-indigo-500">Vocab Quiz</a>
       </nav>
-
-      <!-- Nút menu mobile -->
       <button class="md:hidden text-gray-700 text-3xl" id="menuBtn">☰</button>
     </div>
-
-    <!-- Menu mobile dạng dropdown -->
-    <div id="mobileMenu" 
-        class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
+    <div id="mobileMenu" class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
       <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Trang Chủ</a>
       <a href="kanji.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Kanji Quiz</a>
       <a href="vocab.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Vocab Quiz</a>
     </div>
   </header>
 
-  
-
-  <!-- Hero Section -->
-  <section class="flex-1 flex items-center justify-center text-center px-6 pt-24 pb-16">
-    <div class="max-w-3xl">
-      <h2 class="text-4xl md:text-6xl font-extrabold text-gray-800 animate__animated animate__fadeInDown">
-        Học <span class="text-indigo-600">Kanji</span> & <span class="text-pink-600">Vocabulary</span> hiệu quả
-      </h2>
-      <p class="mt-6 text-lg text-gray-600 animate__animated animate__fadeInUp">
-        Luyện tập ghi nhớ từ vựng và Kanji thông qua hệ thống bài học hiện đại, giao diện thân thiện, và trải nghiệm trực quan.
-      </p>
-      <div class="mt-8 flex justify-center gap-6">
-        <a href="kanji.html" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition">Bắt đầu Kanji</a>
-        <a href="vocab.html" class="px-6 py-3 rounded-xl bg-pink-600 text-white font-semibold shadow-lg hover:bg-pink-700 transition">Bắt đầu Vocabulary</a>
-      </div>
+<!-- Hero Section (kích thước như ban đầu) -->
+<section class="flex-1 flex items-center justify-center text-center px-6 pt-24 pb-16">
+  <div class="max-w-3xl">
+    <h2 class="text-4xl md:text-6xl font-extrabold text-gray-800 animate__animated animate__fadeInDown">
+      Học <span class="text-indigo-600">Kanji</span> & <span class="text-pink-600">Vocabulary</span> hiệu quả
+    </h2>
+    <p class="mt-6 text-lg text-gray-600 animate__animated animate__fadeInUp">
+      Luyện tập ghi nhớ từ vựng và Kanji thông qua hệ thống bài học hiện đại, giao diện thân thiện, và trải nghiệm trực quan.
+    </p>
+    <div class="mt-8 flex justify-center gap-6">
+      <a href="kanji.html" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition">
+        Bắt đầu học Kanji
+      </a>
+      <a href="vocab.html" class="px-6 py-3 rounded-xl bg-pink-600 text-white font-semibold shadow-lg hover:bg-pink-700 transition">
+        Bắt đầu học Vocab
+      </a>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
+
 
   <!-- Feature Section -->
-  <section class="bg-white py-16">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6">
-      <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-2xl shadow hover:scale-105 transition">
+  <section class="py-16 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50">
+    <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">Các tính năng nổi bật</h2>
+      <p class="mt-2 text-gray-600">Tăng hiệu quả học tập với các công cụ và chế độ luyện tập đa dạng.</p>
+    </div>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6 text-center">
+      <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-2xl shadow feature-card">
         <h3 class="text-xl font-bold text-indigo-700">Kanji Quiz</h3>
         <p class="mt-2 text-gray-600">Ôn luyện Kanji theo từng Unit, chia nhỏ bài học dễ tiếp thu.</p>
       </div>
-      <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-2xl shadow feature-card">
         <h3 class="text-xl font-bold text-pink-700">Vocabulary Quiz</h3>
         <p class="mt-2 text-gray-600">Học từ vựng với nhiều chế độ làm bài: Flashcard, Multiple-choice, Practice.</p>
       </div>
-      <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl shadow hover:scale-105 transition">
+      <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl shadow feature-card">
         <h3 class="text-xl font-bold text-purple-700">Thống kê kết quả</h3>
         <p class="mt-2 text-gray-600">Theo dõi tiến trình học tập, cải thiện từng ngày.</p>
       </div>
     </div>
   </section>
 
-<!-- Footer -->
-<footer class="bg-indigo-600 text-white py-10">
-  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-    
-    <!-- Cột 1: luôn hiển thị -->
-    <div class="text-center md:text-left">
-      <h2 class="text-xl font-semibold mb-4">日本語 Learning</h2>
-      <p class="text-sm text-indigo-100">
-        Website học tiếng Nhật trực tuyến với các bài kiểm tra Kanji và từ vựng.
-      </p>
+  <!-- Quick Start Section -->
+  <section class="py-16 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50">
+    <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">Hướng dẫn học nhanh</h2>
+      <p class="mt-2 text-gray-600">Ba bước đơn giản để bắt đầu học Kanji và Vocabulary hiệu quả.</p>
     </div>
-    
-    <!-- Cột 2: ẩn trên điện thoại -->
-    <div class="hidden md:block">
-      <h2 class="text-lg font-semibold mb-4">Liên kết nhanh</h2>
-      <ul class="space-y-2">
-        <li><a href="index.html" class="hover:text-indigo-300">Trang chủ</a></li>
-        <li><a href="kanji.html" class="hover:text-indigo-300">Kanji Quiz</a></li>
-        <li><a href="vocab.html" class="hover:text-indigo-300">Vocab Quiz</a></li>
-      </ul>
-    </div>
-    
-    <!-- Cột 3: ẩn trên điện thoại -->
-    <div class="hidden md:block">
-      <h2 class="text-lg font-semibold mb-4">Liên hệ</h2>
-      <p class="text-sm">Email: contact@nihongo.com</p>
-      <p class="text-sm">Hotline: 0123 456 789</p>
-      <div class="flex space-x-4 mt-3">
-        <a href="#" class="hover:text-indigo-300">🌐</a>
-        <a href="#" class="hover:text-indigo-300">📘</a>
-        <a href="#" class="hover:text-indigo-300">🐦</a>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6 text-center">
+      <div class="p-6 rounded-2xl shadow quick-card bg-gradient-to-br from-indigo-50 to-indigo-100">
+        <div class="text-5xl mb-4">📚</div>
+        <h3 class="text-xl font-bold mb-2 text-indigo-700">Chọn loại học</h3>
+        <p class="text-gray-700">Chọn học Kanji hoặc Vocabulary tùy mục tiêu của bạn.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow quick-card bg-gradient-to-br from-pink-50 to-pink-100">
+        <div class="text-5xl mb-4">📝</div>
+        <h3 class="text-xl font-bold mb-2 text-pink-700">Chọn Unit và Bài</h3>
+        <p class="text-gray-700">Chọn unit bạn muốn học, sau đó chọn bài tương ứng để bắt đầu ôn luyện.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow quick-card bg-gradient-to-br from-purple-50 to-purple-100">
+        <div class="text-5xl mb-4">⚙️</div>
+        <h3 class="text-xl font-bold mb-2 text-purple-700">Chọn chế độ (Vocabulary)</h3>
+        <p class="text-gray-700">Đối với Vocabulary, bạn có thể chọn chế độ: Kanji ➝ Nghĩa, Hiragana ➝ Nghĩa, hoặc Kanji ➝ Hiragana.</p>
       </div>
     </div>
-  </div>
+    <div class="text-center mt-10">
+      <a href="vocab.html" class="inline-block px-8 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition">Bắt đầu học ngay</a>
+    </div>
+  </section>
 
-  <!-- Dòng copyright: luôn nằm dưới, căn giữa trên điện thoại, căn giữa máy tính -->
-  <div class="mt-8 border-t border-indigo-500 pt-4 text-indigo-100 text-sm text-center">
-    © 2025 日本語 Learning. All rights reserved.
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-xl font-semibold mb-4">日本語 Learning</h2>
+        <p class="text-sm text-indigo-100">Website học tiếng Nhật trực tuyến với các bài kiểm tra Kanji và từ vựng.</p>
+      </div>
+      <div class="hidden md:block">
+        <h2 class="text-lg font-semibold mb-4">Liên kết nhanh</h2>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-indigo-300">Trang chủ</a></li>
+          <li><a href="kanji.html" class="hover:text-indigo-300">Kanji Quiz</a></li>
+          <li><a href="vocab.html" class="hover:text-indigo-300">Vocab Quiz</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:block">
+        <h2 class="text-lg font-semibold mb-4">Liên hệ</h2>
+        <p class="text-sm">Email: vietphamdinhvan@gmail.com</p>
+        <p class="text-sm">Hotline: 0326661401</p>
+        <div class="flex space-x-4 mt-3">
+          <a href="#" class="hover:text-indigo-300"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-indigo-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 border-t border-indigo-500 pt-4 text-indigo-100 text-sm text-center">
+      © 2025 日本語 Learning. All rights reserved.
+    </div>
+  </footer>
 
-
-
-
-
-
-
-  <!-- Script mobile menu -->
+  <!-- Scripts -->
   <script>
+    // Mobile Menu
     const menuBtn = document.getElementById("menuBtn");
     const mobileMenu = document.getElementById("mobileMenu");
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
-  </script>
 
+    // GSAP ScrollTrigger Animations
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".feature-card", {scrollTrigger: ".feature-card", opacity:0, y:50, duration:1, stagger:0.2});
+    gsap.from(".quick-card", {scrollTrigger: ".quick-card", opacity:0, y:50, duration:1, stagger:0.2});
+
+    // GSAP Hover Scale
+    document.querySelectorAll(".feature-card, .quick-card").forEach(card => {
+      card.addEventListener("mouseenter", () => { gsap.to(card, {scale:1.05, duration:0.3}); });
+      card.addEventListener("mouseleave", () => { gsap.to(card, {scale:1, duration:0.3}); });
+    });
+
+    // Lottie Hero Animation
+    lottie.loadAnimation({
+      container: document.getElementById('lottieHero'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'hero-animation.json' // Thay bằng đường dẫn file JSON của bạn
+    });
+  </script>
 </body>
 </html>
