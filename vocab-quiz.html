@@ -44,18 +44,23 @@
     <!-- Kết quả -->
     <div id="vocab-result" class="text-lg font-semibold mb-4 text-gray-700"></div>
 
+    <!-- Nút tiếp theo -->
+    <button onclick="nextVocabQuestion()" id="vocab-next-btn" 
+            class="bg-indigo-600 text-white px-6 py-2 rounded-lg shadow hover:bg-indigo-700 transition hidden mb-6">
+      Câu tiếp theo
+    </button>
+
     <!-- Thông tin chi tiết -->
     <div id="vocab-full-info" class="bg-white/70 p-4 rounded shadow mb-6 hidden text-left w-full"></div>
 
     <!-- Nút điều hướng -->
     <div class="flex flex-wrap justify-center gap-4 w-full">
-      <button onclick="nextVocabQuestion()" id="vocab-next-btn" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 hidden">
-        Câu tiếp theo
-      </button>
-      <button class="floating-back-btn px-4 py-2 bg-red-400 text-white rounded hover:bg-red-500 transition" onclick="goVocabBack()">
+      <button class="px-4 py-2 bg-red-400 text-white rounded-lg shadow hover:bg-red-500 transition" onclick="goVocabBack()">
         Quay lại
-    </button>
-
+      </button>
+      <button class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition" onclick="goVocabHome()">
+        Vocab Quiz
+      </button>
     </div>
 </main>
 
@@ -66,6 +71,10 @@
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
+
+    function goVocabHome() {
+      window.location.href = "vocab.html";
+    }
   </script>
 </body>
 </html>

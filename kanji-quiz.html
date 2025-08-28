@@ -8,17 +8,16 @@
 </head>
 <body class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
 
-    <!-- Header -->
+  <!-- Header -->
   <header class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
       <h1 class="text-2xl font-bold text-indigo-600 cursor-pointer" onclick="window.location.href='index.html'">
         日本語 Learning
       </h1>
-      
       <!-- Menu desktop -->
       <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
         <a href="index.html" class="hover:text-indigo-500">Trang Chủ</a>
-        <a href="kanji.html" class="hover:text-indigo-500">Kanji Quiz</a>
+        <a href="kanji.html" class="hover:text-indigo-500 text-indigo-600 font-semibold">Kanji Quiz</a>
         <a href="vocab.html" class="hover:text-indigo-500">Vocab Quiz</a>
       </nav>
 
@@ -28,7 +27,7 @@
 
     <!-- Menu mobile dạng dropdown -->
     <div id="mobileMenu" 
-        class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
+         class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
       <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Trang Chủ</a>
       <a href="kanji.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Kanji Quiz</a>
       <a href="vocab.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Vocab Quiz</a>
@@ -45,19 +44,23 @@
     <!-- Kết quả -->
     <div id="kanji-result" class="text-lg font-semibold mb-4 text-gray-700"></div>
 
+    <!-- Nút tiếp theo -->
+    <button onclick="nextKanjiQuestion()" id="kanji-next-btn" 
+            class="bg-indigo-600 text-white px-6 py-2 rounded-lg shadow hover:bg-indigo-700 transition hidden mb-6">
+      Câu tiếp theo
+    </button>
+
     <!-- Thông tin chi tiết -->
     <div id="kanji-full-info" class="bg-white/70 p-4 rounded shadow mb-6 hidden text-left w-full"></div>
 
     <!-- Nút điều hướng -->
     <div class="flex flex-wrap justify-center gap-4 w-full">
-      <button onclick="nextKanjiQuestion()" id="kanji-next-btn" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 hidden">
-        Câu tiếp theo
-      </button>
-      <button class="floating-back-btn px-4 py-2 bg-red-400 text-white rounded hover:bg-red-500 transition" onclick="goBack()">
+      <button class="px-4 py-2 bg-red-400 text-white rounded-lg shadow hover:bg-red-500 transition" onclick="goBack()">
         Quay lại
       </button>
-
-
+      <button class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition" onclick="goKanjiHome()">
+        Kanji Quiz
+      </button>
     </div>
   </main>
 
@@ -68,6 +71,10 @@
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
+
+    function goKanjiHome() {
+      window.location.href = "kanji.html";
+    }
   </script>
 </body>
 </html>
