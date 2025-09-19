@@ -139,7 +139,7 @@ function checkVocabAnswer(answer, q) {
 
   // Nếu là câu cuối cùng thì tự động show kết quả sau 4s
   if (currentIndex === vocabQuestions.length - 1) {
-    setTimeout(showFinalResult, 4000);
+    setTimeout(showFinalResult, 3000);
   } else {
     nextBtn.style.display = "block";
   }

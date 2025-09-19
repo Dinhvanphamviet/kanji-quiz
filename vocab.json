@@ -6630,5 +6630,621 @@
   "hiragana": "つまり",
   "hanTu": "",
   "meaning": "Nói cách khác, tóm lại là, tức là"
-}
+},
+{
+  "id": 881,
+  "unit": 13,
+  "kanji": "就職",
+  "hiragana": "しゅうしょく",
+  "hanTu": "TỰU CHỨC",
+  "meaning": "Đi làm, vào làm (tại công ty)",
+  "examples": [
+    {
+      "jp": "旅行会社に就職する。",
+      "vn": "Làm việc tại công ty du lịch."
+    }
+  ],
+  "related": {
+    "collocations": [
+      "就職活動 (しゅうしょくかつどう)",
+      "就職試験 (しゅうしょくしけん)",
+      "就職難 (しゅうしょくなん)"
+    ],
+    "antonyms": ["退職する (たいしょくする)"],
+    "relatedWords": ["履歴書 (りれきしょ)"]
+  }
+},
+{
+  "id": 882,
+  "unit": 13,
+  "kanji": "退職",
+  "hiragana": "たいしょく",
+  "hanTu": "THỐI CHỨC",
+  "meaning": "Nghỉ việc, thôi việc",
+  "examples": [
+    {
+      "jp": "母の介護のため、退職を決める。",
+      "vn": "Vì phải chăm sóc mẹ nên tôi quyết định nghỉ việc."
+    },
+    {
+      "jp": "社長の意見に反対し続けていた田口さんは退職させられてしまった。",
+      "vn": "Anh Taguchi, người tiếp tục phản đối ý kiến của giám đốc, đã bị cho nghỉ việc."
+    }
+  ],
+  "related": {
+    "collocations": [
+      "定年退職 (ていねんたいしょく)",
+      "退職金 (たいしょくきん)"
+    ],
+    "antonyms": ["就職する (しゅうしょくする)"],
+    "synonyms": ["辞職する (じしょくする)"]
+  }
+},
+{
+  "id": 883,
+  "unit": 13,
+  "kanji": "失業",
+  "hiragana": "しつぎょう",
+  "hanTu": "THẤT NGHIỆP",
+  "meaning": "Thất nghiệp",
+  "examples": [
+    {
+      "jp": "会社が倒産して失業した。",
+      "vn": "Công ty phá sản nên tôi bị thất nghiệp."
+    },
+    {
+      "jp": "失業率が少しずつ上っている。",
+      "vn": "Tỉ lệ thất nghiệp đang dần tăng lên."
+    }
+  ],
+  "related": {
+    "collocations": [
+      "失業率 (しつぎょうりつ)",
+      "失業者 (しつぎょうしゃ)",
+      "失業保険 (しつぎょうほけん)"
+    ],
+    "relatedWords": ["くび", "リストラ"]
+  }
+},
+{
+  "id": 884,
+  "unit": 13,
+  "kanji": "学歴",
+  "hiragana": "がくれき",
+  "hanTu": "HỌC LỊCH",
+  "meaning": "Bằng cấp, quá trình học tập",
+  "examples": [
+    {
+      "jp": "学歴が高くても、実力があるかどうかはわからない。",
+      "vn": "Dù học vấn cao nhưng không biết có thực lực hay không."
+    },
+    {
+      "jp": "子供にいい学歴をつけさせたいと思う親が多い。",
+      "vn": "Nhiều phụ huynh muốn con cái có học vấn tốt."
+    }
+  ],
+  "related": {
+    "collocations": [
+      "高学歴 (こうがくれき)",
+      "学歴社会 (がくれきしゃかい)"
+    ],
+    "antonyms": [
+      "学歴が高い ⇔ 学歴が低い",
+      "学歴をつける"
+    ]
+  }
+},
+{
+  "id": 885,
+  "unit": 13,
+  "kanji": "面接",
+  "hiragana": "めんせつ",
+  "hanTu": "DIỆN TIẾP",
+  "meaning": "Phỏng vấn",
+  "examples": [
+    {
+      "jp": "今日、会社の人との面接がある。",
+      "vn": "Hôm nay tôi có buổi phỏng vấn với người của công ty."
+    },
+    {
+      "jp": "受験者の面接を行う。",
+      "vn": "Tiến hành phỏng vấn thí sinh."
+    },
+    {
+      "jp": "先生が学生を面接する。",
+      "vn": "Thầy giáo phỏng vấn học sinh."
+    }
+  ],
+  "related": {
+    "collocations": [
+      "面接試験 (めんせつしけん)",
+      "面接官 (めんせつかん)"
+    ]
+  }
+},
+{
+  "id": 886,
+  "unit": 13,
+  "kanji": "遅刻",
+  "hiragana": "ちこく",
+  "hanTu": "TRÌ KHẮC",
+  "meaning": "Đi trễ, muộn",
+  "examples": [
+    {
+      "jp": "寝坊して授業に遅刻する。",
+      "vn": "Ngủ quên nên đi học muộn."
+    },
+    {
+      "jp": "面接では、1分の遅刻もゆるされない。",
+      "vn": "Trong buổi phỏng vấn, đi trễ dù chỉ một phút cũng không được chấp nhận."
+    }
+  ]
+},
+{
+  "id": 887,
+  "unit": 13,
+  "kanji": "計算",
+  "hiragana": "けいさん",
+  "hanTu": "KẾ TOÁN",
+  "meaning": "Tính toán",
+  "examples": [
+    {
+      "jp": "私は計算が苦手だ。",
+      "vn": "Tôi không giỏi tính toán."
+    },
+    {
+      "jp": "旅行にいくらかかるか計算する。",
+      "vn": "Tính toán xem chuyến du lịch tốn bao nhiêu tiền."
+    }
+  ],
+  "related": {
+    "relatedWords": [
+      "電卓 (でんたく)",
+      "電子式卓上計算機 (でんししきたくじょうけいさんき)"
+    ]
+  }
+},
+{
+  "id": 888,
+  "unit": 13,
+  "kanji": "計画",
+  "hiragana": "けいかく",
+  "hanTu": "KẾ HỌA",
+  "meaning": "Kế hoạch",
+  "examples": [
+    {
+      "jp": "来年の計画を立てる。",
+      "vn": "Lập kế hoạch cho năm tới."
+    },
+    {
+      "jp": "夏休みにファンシーパン山に登ろうと計画している。",
+      "vn": "Tôi dự định leo núi Fansipan vào kỳ nghỉ hè."
+    }
+  ],
+  "related": {
+    "collocations": ["計画を立てる"],
+    "synonyms": ["プラン"]
+  }
+},
+{
+  "id": 889,
+  "unit": 13,
+  "kanji": "整理",
+  "hiragana": "せいり",
+  "hanTu": "CHỈNH LÍ",
+  "meaning": "Sắp xếp, chỉnh lý",
+  "examples": [
+    {
+      "jp": "勉強の前に机の上を整理する。",
+      "vn": "Trước khi học thì dọn dẹp bàn."
+    },
+    {
+      "jp": "会社が倒産して、まだ気持ちの整理ができていない。",
+      "vn": "Công ty phá sản, tôi vẫn chưa thể sắp xếp lại tâm trạng."
+    },
+    {
+      "jp": "引っ越しの前に、古い物を整理する。",
+      "vn": "Trước khi chuyển nhà thì dọn dẹp đồ cũ."
+    }
+  ]
+},
+{
+  "id": 890,
+  "unit": 13,
+  "kanji": "注文",
+  "hiragana": "ちゅうもん",
+  "hanTu": "CHÚ VĂN",
+  "meaning": "Đặt hàng, gọi món, yêu cầu",
+  "examples": [
+    {
+      "jp": "注文の品が届く。",
+      "vn": "Hàng đã đặt được giao đến."
+    },
+    {
+      "jp": "喫茶店でコーヒーを注文する。",
+      "vn": "Gọi cà phê ở quán giải khát."
+    }
+  ],
+  "related": {
+    "collocations": ["注文をとる", "注文をつける"],
+    "synonyms": [],
+    "antonyms": []
+  }
+},
+
+{
+  "id": 891,
+  "unit": 13,
+  "kanji": "徹夜",
+  "hiragana": "てつや",
+  "hanTu": "TRIỆT DẠ",
+  "meaning": "Thức trắng đêm, thức suốt đêm",
+  "examples": [
+    {
+      "jp": "徹夜で勉強する。",
+      "vn": "Học suốt đêm."
+    },
+    {
+      "jp": "今日は徹夜だ。",
+      "vn": "Hôm nay tôi phải thức trắng đêm."
+    },
+    {
+      "jp": "仕事で徹夜をする。",
+      "vn": "Thức suốt đêm vì công việc."
+    }
+  ],
+  "related": {
+    "collocations": [],
+    "synonyms": [],
+    "antonyms": []
+  }
+},
+
+{
+  "id": 892,
+  "unit": 13,
+  "kanji": "最高",
+  "hiragana": "さいこう",
+  "hanTu": "TỐI CAO",
+  "meaning": "Cao nhất, tuyệt vời nhất",
+  "examples": [
+    {
+      "jp": "この店は昨日、開店以来最高の売り上げを記録した。",
+      "vn": "Cửa hàng này hôm qua đã ghi nhận doanh thu cao nhất kể từ khi mở cửa."
+    },
+    {
+      "jp": "今日の試合は最高だった。",
+      "vn": "Trận đấu hôm nay thật tuyệt vời."
+    },
+    {
+      "jp": "この映画は最高におもしろい。",
+      "vn": "Bộ phim này cực kỳ thú vị."
+    }
+  ],
+  "related": {
+    "collocations": ["最高気温", "N＋最高", "最高＋N"],
+    "synonyms": [],
+    "antonyms": ["最低（さいてい）"]
+  }
+},
+
+{
+  "id": 893,
+  "unit": 13,
+  "kanji": "最低",
+  "hiragana": "さいてい",
+  "hanTu": "TỐI ĐÊ",
+  "meaning": "Thấp nhất, tệ nhất, kinh khủng",
+  "examples": [
+    {
+      "jp": "クラスで最低の点を取ってしまった。",
+      "vn": "Tôi đã bị điểm thấp nhất lớp."
+    },
+    {
+      "jp": "今日の試合は最低だった。",
+      "vn": "Trận đấu hôm nay thật tệ hại."
+    },
+    {
+      "jp": "弱い者いじめをするなんて、最低の人だ。",
+      "vn": "Ăn hiếp kẻ yếu thì đúng là kẻ tệ hại nhất."
+    }
+  ],
+  "related": {
+    "collocations": ["最低気温", "N＋最低", "最低＋N"],
+    "synonyms": [],
+    "antonyms": ["最高（さいこう）"]
+  }
+},
+{
+    "id": 894,
+    "unit": 14,
+    "kanji": "冗談",
+    "hiragana": "じょうだん",
+    "hanTu": "NHŨNG ĐÀM",
+    "meaning": "Nói đùa, chuyện đùa, bông đùa",
+    "examples": [
+      {
+        "jp": "冗談を言ったら、みんなが本気にした。",
+        "vn": "Khi tôi nói đùa, mọi người lại tưởng là thật."
+      },
+      {
+        "jp": "人の病気に対して冗談なんか言ってはいけない。",
+        "vn": "Không được nói đùa về bệnh tật của người khác."
+      }
+    ],
+    "related": {
+      "collocations": ["冗談を言う"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 895,
+    "unit": 15,
+    "kanji": "遠慮",
+    "hiragana": "えんりょ",
+    "hanTu": "VIỄN LỰ",
+    "meaning": "Ngại ngùng, khách sáo, giữ kẽ",
+    "examples": [
+      {
+        "jp": "遠慮しないで食べてください。",
+        "vn": "Xin đừng ngại/khách sáo mà cứ ăn đi."
+      },
+      {
+        "jp": "上司に遠慮して、自分の意見が言えなかった。",
+        "vn": "Vì ngại cấp trên nên tôi đã không thể nói ra ý kiến của mình."
+      },
+      {
+        "jp": "ここではタバコはご遠慮ください。",
+        "vn": "Xin vui lòng không hút thuốc ở đây."
+      }
+    ],
+    "related": {
+      "collocations": ["ご遠慮ください (Mang ý nghĩa: xin đừng làm gì đó)"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 896,
+    "unit": 16,
+    "kanji": "我慢",
+    "hiragana": "がまん",
+    "hanTu": "NGÃ MẠN",
+    "meaning": "Chịu đựng, nhẫn nại, kiềm chế",
+    "examples": [
+      {
+        "jp": "痛くても我慢する。",
+        "vn": "Dù đau nhưng tôi vẫn chịu đựng."
+      },
+      {
+        "jp": "眠いのを我慢して勉強した。",
+        "vn": "Tôi đã cố chịu đựng cơn buồn ngủ để học bài."
+      }
+    ],
+    "related": {
+      "collocations": ["我慢強い (がまんづよい - Giỏi chịu đựng)"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 897,
+    "unit": 17,
+    "kanji": "迷惑",
+    "hiragana": "めいわく",
+    "hanTu": "MÊ HOẶC",
+    "meaning": "Sự phiền phức, quấy rầy, làm phiền",
+    "examples": [
+      {
+        "jp": "人に迷惑をかけてはいけない。",
+        "vn": "Không được làm phiền người khác."
+      },
+      {
+        "jp": "夜中に騒がれて迷惑した。",
+        "vn": "Tôi đã rất phiền lòng vì bị làm ồn vào lúc nửa đêm."
+      },
+      {
+        "jp": "迷惑な人",
+        "vn": "Người phiền phức."
+      }
+    ],
+    "related": {
+      "collocations": ["迷惑がかかる", "迷惑をかける", "近所迷惑"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 898,
+    "unit": 18,
+    "kanji": "希望",
+    "hiragana": "きぼう",
+    "hanTu": "HI VỌNG",
+    "meaning": "Hy vọng, nguyện vọng, mong muốn",
+    "examples": [
+      {
+        "jp": "最後まで希望を捨ててはいけない。",
+        "vn": "Không được từ bỏ hy vọng cho đến cuối cùng."
+      },
+      {
+        "jp": "私は故郷での就職を希望している。",
+        "vn": "Tôi có nguyện vọng được làm việc ở quê nhà."
+      }
+    ],
+    "related": {
+      "collocations": ["希望者", "望む (động từ)"],
+      "synonyms": ["望み"],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 899,
+    "unit": 19,
+    "kanji": "想像",
+    "hiragana": "そうぞう",
+    "hanTu": "TƯỞNG TƯỢNG",
+    "meaning": "Tưởng tượng, hình dung",
+    "examples": [
+      {
+        "jp": "このラーメン、想像していたよりずっと大きいね。",
+        "vn": "Món mì ramen này lớn hơn nhiều so với tôi đã tưởng tượng."
+      },
+      {
+        "jp": "100年後の未来を想像する。",
+        "vn": "Tưởng tượng về tương lai 100 năm sau."
+      }
+    ],
+    "related": {
+      "collocations": ["想像がつく", "想像力"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 900,
+    "unit": 20,
+    "kanji": "努力",
+    "hiragana": "どりょく",
+    "hanTu": "NỖ LỰC",
+    "meaning": "Nỗ lực, sự cố gắng",
+    "examples": [
+      {
+        "jp": "一生懸命、努力をする。",
+        "vn": "Nỗ lực hết sức mình."
+      },
+      {
+        "jp": "学生の努力を評価する。",
+        "vn": "Đánh giá sự nỗ lực của học sinh."
+      }
+    ],
+    "related": {
+      "collocations": ["努力家", "努力を重ねる", "努力が実る"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 901,
+    "unit": 21,
+    "kanji": "ご馳走",
+    "hiragana": "ごちそう",
+    "hanTu": "",
+    "meaning": "Chiêu đãi, khao, bữa ăn ngon/thịnh soạn",
+    "examples": [
+      {
+        "jp": "家族みんなでごちそうを食べて、祖父の誕生日を祝った。",
+        "vn": "Cả gia đình cùng ăn một bữa thịnh soạn để chúc mừng sinh nhật ông."
+      },
+      {
+        "jp": "チンさんが私たちに手作りのバインセオをごちそうしてくれた。",
+        "vn": "Chị Trinh đã chiêu đãi chúng tôi món bánh xèo tự làm."
+      },
+      {
+        "jp": "きのうは先輩にごちそうになった。",
+        "vn": "Hôm qua tôi đã được tiền bối chiêu đãi."
+      }
+    ],
+    "related": {
+      "collocations": ["ごちそうになる", "ごちそうさま (lời cảm ơn sau bữa ăn)"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 902,
+    "unit": 22,
+    "kanji": "免許",
+    "hiragana": "めんきょ",
+    "hanTu": "MIỄN HỨA",
+    "meaning": "Giấy phép, bằng cấp",
+    "examples": [
+      {
+        "jp": "レストランを開くには、調理師の免許が必要だ。",
+        "vn": "Để mở một nhà hàng, cần phải có giấy phép của đầu bếp."
+      },
+      {
+        "jp": "無免許で車を運転するのは犯罪です。",
+        "vn": "Lái xe không có giấy phép là hành vi phạm tội."
+      }
+    ],
+    "related": {
+      "collocations": ["運転免許", "教員免許", "医師免許", "免許証", "免許を取る", "免許を与える"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 903,
+    "unit": 23,
+    "kanji": "性格",
+    "hiragana": "せいかく",
+    "hanTu": "TÍNH CÁCH",
+    "meaning": "Tính cách, tính tình",
+    "examples": [
+      {
+        "jp": "あの人は性格がいいので、みんなに好かれている。",
+        "vn": "Người đó vì có tính cách tốt nên được mọi người yêu mến."
+      },
+      {
+        "jp": "顔はそっくりなのに性格は正反対の兄弟。",
+        "vn": "Họ là những người anh em có khuôn mặt giống hệt nhau nhưng tính cách thì hoàn toàn trái ngược."
+      }
+    ],
+    "related": {
+      "collocations": ["性格がいい", "性格が悪い"],
+      "synonyms": ["性質"],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 904,
+    "unit": 24,
+    "kanji": "性質",
+    "hiragana": "せいしつ",
+    "hanTu": "TÍNH CHẤT",
+    "meaning": "Tính chất (của vật), bản tính (của người/vật)",
+    "examples": [
+      {
+        "jp": "この布は燃えにくい性質を持っている。",
+        "vn": "Loại vải này có tính chất khó cháy."
+      },
+      {
+        "jp": "ヒツジはおとなしい性質の動物だ。",
+        "vn": "Cừu là loài động vật có bản tính hiền lành."
+      },
+      {
+        "jp": "人は持って生まれた性質をなかなか変えられない。",
+        "vn": "Con người khó mà thay đổi được bản tính bẩm sinh."
+      }
+    ],
+    "related": {
+      "collocations": [],
+      "synonyms": ["性格"],
+      "antonyms": []
+    }
+  },
+  {
+    "id": 905,
+    "unit": 25,
+    "kanji": "生",
+    "hiragana": "なま",
+    "hanTu": "SINH",
+    "meaning": "Sống, tươi, chưa qua chế biến",
+    "examples": [
+      {
+        "jp": "肉を生で食べると、危ないですよ。",
+        "vn": "Ăn thịt sống thì nguy hiểm đấy."
+      },
+      {
+        "jp": "生魚が腐って、すごい臭いがしている。",
+        "vn": "Cá sống bị ươn nên bốc mùi kinh khủng."
+      }
+    ],
+    "related": {
+      "collocations": ["生野菜", "生魚", "生肉", "生物", "生ビール", "生ゴミ"],
+      "synonyms": [],
+      "antonyms": []
+    }
+  }
 ]
