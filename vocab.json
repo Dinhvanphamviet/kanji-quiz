@@ -6957,7 +6957,7 @@
 },
 {
     "id": 894,
-    "unit": 14,
+    "unit": 13,
     "kanji": "冗談",
     "hiragana": "じょうだん",
     "hanTu": "NHŨNG ĐÀM",
@@ -6980,7 +6980,7 @@
   },
   {
     "id": 895,
-    "unit": 15,
+    "unit": 13,
     "kanji": "遠慮",
     "hiragana": "えんりょ",
     "hanTu": "VIỄN LỰ",
@@ -7007,7 +7007,7 @@
   },
   {
     "id": 896,
-    "unit": 16,
+    "unit": 13,
     "kanji": "我慢",
     "hiragana": "がまん",
     "hanTu": "NGÃ MẠN",
@@ -7030,7 +7030,7 @@
   },
   {
     "id": 897,
-    "unit": 17,
+    "unit": 13,
     "kanji": "迷惑",
     "hiragana": "めいわく",
     "hanTu": "MÊ HOẶC",
@@ -7057,7 +7057,7 @@
   },
   {
     "id": 898,
-    "unit": 18,
+    "unit": 13,
     "kanji": "希望",
     "hiragana": "きぼう",
     "hanTu": "HI VỌNG",
@@ -7080,7 +7080,7 @@
   },
   {
     "id": 899,
-    "unit": 19,
+    "unit": 13,
     "kanji": "想像",
     "hiragana": "そうぞう",
     "hanTu": "TƯỞNG TƯỢNG",
@@ -7103,7 +7103,7 @@
   },
   {
     "id": 900,
-    "unit": 20,
+    "unit": 13,
     "kanji": "努力",
     "hiragana": "どりょく",
     "hanTu": "NỖ LỰC",
@@ -7126,7 +7126,7 @@
   },
   {
     "id": 901,
-    "unit": 21,
+    "unit": 13,
     "kanji": "ご馳走",
     "hiragana": "ごちそう",
     "hanTu": "",
@@ -7153,7 +7153,7 @@
   },
   {
     "id": 902,
-    "unit": 22,
+    "unit": 13,
     "kanji": "免許",
     "hiragana": "めんきょ",
     "hanTu": "MIỄN HỨA",
@@ -7176,7 +7176,7 @@
   },
   {
     "id": 903,
-    "unit": 23,
+    "unit": 13,
     "kanji": "性格",
     "hiragana": "せいかく",
     "hanTu": "TÍNH CÁCH",
@@ -7199,7 +7199,7 @@
   },
   {
     "id": 904,
-    "unit": 24,
+    "unit": 13,
     "kanji": "性質",
     "hiragana": "せいしつ",
     "hanTu": "TÍNH CHẤT",
@@ -7226,7 +7226,7 @@
   },
   {
     "id": 905,
-    "unit": 25,
+    "unit": 13,
     "kanji": "生",
     "hiragana": "なま",
     "hanTu": "SINH",
