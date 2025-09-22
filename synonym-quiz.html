@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔄 Synonym Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-indigo-600 cursor-pointer" onclick="window.location.href='index.html'">
+        日本語 Learning
+      </h1>
+      <!-- Menu desktop -->
+      <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-indigo-500">Trang Chủ</a>
+        <a href="kanji.html" class="hover:text-indigo-500">Kanji Quiz</a>
+        <a href="vocab.html" class="hover:text-indigo-500">Vocab Quiz</a>
+        <a href="synonym.html" class="hover:text-indigo-500 text-indigo-600 font-semibold">Synonym Quiz</a>
+      </nav>
+
+      <!-- Nút menu mobile -->
+      <button class="md:hidden text-gray-700 text-3xl" id="menuBtn">☰</button>
+    </div>
+
+    <!-- Menu mobile dạng dropdown -->
+    <div id="mobileMenu" 
+         class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Trang Chủ</a>
+      <a href="kanji.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Kanji Quiz</a>
+      <a href="vocab.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Vocab Quiz</a>
+      <a href="synonym.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Synonym Quiz</a>
+    </div>
+  </header>
+
+  <!-- Main Quiz Container -->
+  <main class="flex-1 flex flex-col items-center justify-start text-center px-4 pt-32 pb-16 w-full max-w-3xl mx-auto">
+    <h2 id="synonym-question-title" class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6">Đang tải câu hỏi...</h2>
+
+    <!-- Đáp án -->
+    <div id="synonym-options" class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-6"></div>
+
+    <!-- Kết quả -->
+    <div id="synonym-result" class="text-lg font-semibold mb-4 text-gray-700"></div>
+
+    <!-- Nút tiếp theo -->
+    <button onclick="nextSynonymQuestion()" id="synonym-next-btn" 
+            class="bg-indigo-600 text-white px-6 py-2 rounded-lg shadow hover:bg-indigo-700 transition hidden mb-6">
+      Câu tiếp theo
+    </button>
+
+    <!-- Thông tin chi tiết -->
+    <div id="synonym-full-info" class="bg-white/70 p-4 rounded shadow mb-6 hidden text-left w-full"></div>
+
+    <!-- Nút điều hướng -->
+<div class="flex flex-wrap justify-center gap-4 w-full items-center">
+  <!-- Quay lại -->
+  <button id="synonym-back-btn" class="px-4 py-2 bg-red-400 text-white rounded-lg shadow hover:bg-red-500 transition" onclick="goBack()">
+    Quay lại
+  </button>
+
+  <!-- Synonym Quiz -->
+  <button class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition" onclick="goSynonymHome()">
+    Synonym Quiz
+  </button>
+
+  <!-- Cụm nút bên phải -->
+  <div class="flex gap-2">
+    <!-- Làm lại (ẩn khi chưa hoàn thành bài) -->
+    <button id="retry-btn" class="hidden px-4 py-2 bg-gray-500 text-white rounded-lg shadow hover:bg-gray-600 transition" onclick="retrySynonymQuiz()">
+      🔄 Làm lại
+    </button>
+
+    <!-- Sang bài tiếp theo (ẩn khi chưa hoàn thành bài) -->
+    <button id="next-lesson-btn" class="hidden px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition" onclick="goToNextLesson()">
+      ➡️ Sang bài tiếp theo
+    </button>
+  </div>
+</div>
+
+  </main>
+
+  <script src="synonym-quiz.js"></script>
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    function goSynonymHome() {
+      window.location.href = "synonym.html";
+    }
+  </script>
+</body>
+</html>

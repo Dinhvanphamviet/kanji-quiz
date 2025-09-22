@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔄 Synonym Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-indigo-600 cursor-pointer" onclick="window.location.href='index.html'">
+        日本語 Learning
+      </h1>
+      <!-- Menu desktop -->
+      <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-indigo-500">Trang Chủ</a>
+        <a href="kanji.html" class="hover:text-indigo-500">Kanji Quiz</a>
+        <a href="vocab.html" class="hover:text-indigo-500">Vocab Quiz</a>
+        <a href="synonym.html" class="hover:text-indigo-500">Synonym Quiz</a>
+      </nav>
+
+      <!-- Nút menu mobile -->
+      <button class="md:hidden text-gray-700 text-3xl" id="menuBtn">☰</button>
+    </div>
+
+    <!-- Menu mobile dạng dropdown -->
+    <div id="mobileMenu" 
+        class="hidden absolute right-6 mt-2 bg-white shadow-lg rounded-xl py-2 w-40 text-gray-700 font-medium">
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Trang Chủ</a>
+      <a href="kanji.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Kanji Quiz</a>
+      <a href="vocab.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Vocab Quiz</a>
+      <a href="synonym.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Synonym Quiz</a>
+    </div>
+  </header>
+
+  <section class="flex-1 flex flex-col items-center justify-center text-center px-4 pt-28 pb-16">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6">Luyện Synonym Theo Unit</h1>
+
+    <!-- Unit Grid -->
+    <div class="unit-grid flex flex-col gap-4 px-2 md:grid md:grid-cols-3 md:gap-6 max-w-6xl w-full" id="synonym-unit-grid">
+      <!-- Cards sẽ sinh ra bằng JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Cột 1 -->
+      <div class="text-center md:text-left">
+        <h2 class="text-xl font-semibold mb-4">日本語 Learning</h2>
+        <p class="text-sm text-indigo-100">
+          Website học tiếng Nhật trực tuyến với các bài kiểm tra Kanji, từ vựng và Synonym.
+        </p>
+      </div>
+      
+      <!-- Cột 2 -->
+      <div class="hidden md:block">
+        <h2 class="text-lg font-semibold mb-4">Liên kết nhanh</h2>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-indigo-300">Trang chủ</a></li>
+          <li><a href="kanji.html" class="hover:text-indigo-300">Kanji Quiz</a></li>
+          <li><a href="vocab.html" class="hover:text-indigo-300">Vocab Quiz</a></li>
+          <li><a href="synonym.html" class="hover:text-indigo-300">Synonym Quiz</a></li>
+        </ul>
+      </div>
+      
+      <!-- Cột 3 -->
+      <div class="hidden md:block">
+        <h2 class="text-lg font-semibold mb-4">Liên hệ</h2>
+        <p class="text-sm">Email: vietphamdinhvan@gmail.com</p>
+        <p class="text-sm">Hotline: 0326661401</p>
+        <div class="flex space-x-4 mt-3">
+          <a href="https://www.facebook.com/tolavietdayahihi" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/_dinhviet" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-indigo-500 pt-4 text-indigo-100 text-sm text-center">
+      © 2025 日本語 Learning. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="synonym.js"></script>
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
