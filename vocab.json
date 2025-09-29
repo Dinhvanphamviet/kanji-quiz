@@ -7246,5 +7246,325 @@
       "synonyms": [],
       "antonyms": []
     }
-  }
+  },
+  {
+        "id": 906,
+        "unit": 14,
+        "kanji": "ファストフード",
+        "hiragana": "ふぁすとふーど",
+        "hanTu": "",
+        "meaning": "đồ ăn nhanh"
+    },
+    {
+        "id": 907,
+        "unit": 14,
+        "kanji": "点",
+        "hiragana": "てん",
+        "hanTu": "Điểm",
+        "meaning": "điểm"
+    },
+    {
+        "id": 908,
+        "unit": 14,
+        "kanji": "メニュー",
+        "hiragana": "めにゅー",
+        "hanTu": "",
+        "meaning": "thực đơn"
+    },
+    {
+        "id": 909,
+        "unit": 14,
+        "kanji": "代表的な",
+        "hiragana": "だいひょうてきな",
+        "hanTu": "Đại Biểu Đích",
+        "meaning": "có tính tiêu biểu, đại diện"
+    },
+    {
+        "id": 910,
+        "unit": 14,
+        "kanji": "ハンバーガー",
+        "hiragana": "はんばーがー",
+        "hanTu": "",
+        "meaning": "bánh mì hăm-bơ-gơ"
+    },
+    {
+        "id": 911,
+        "unit": 14,
+        "kanji": "フライドポテト",
+        "hiragana": "ふらいどぽてと",
+        "hanTu": "",
+        "meaning": "khoai tây chiên"
+    },
+    {
+        "id": 912,
+        "unit": 14,
+        "kanji": "スープ",
+        "hiragana": "すーぷ",
+        "hanTu": "",
+        "meaning": "món súp"
+    },
+    {
+        "id": 913,
+        "unit": 14,
+        "kanji": "種類",
+        "hiragana": "しゅるい",
+        "hanTu": "Chủng Loại",
+        "meaning": "chủng loại"
+    },
+    {
+        "id": 914,
+        "unit": 14,
+        "kanji": "～兆円",
+        "hiragana": "～ちょうえん",
+        "hanTu": "Triệu Yên",
+        "meaning": "~ nghìn tỉ yên"
+    },
+    {
+        "id": 915,
+        "unit": 14,
+        "kanji": "理由",
+        "hiragana": "りゆう",
+        "hanTu": "Lý Do",
+        "meaning": "lý do"
+    },
+    {
+        "id": 916,
+        "unit": 14,
+        "kanji": "手軽に",
+        "hiragana": "てがるに",
+        "hanTu": "Thủ Khinh",
+        "meaning": "một cách dễ dàng, thuận tiện"
+    },
+    {
+        "id": 917,
+        "unit": 14,
+        "kanji": "しかし",
+        "hiragana": "しかし",
+        "hanTu": "",
+        "meaning": "nhưng"
+    },
+    {
+        "id": 918,
+        "unit": 14,
+        "kanji": "このような",
+        "hiragana": "このような",
+        "hanTu": "",
+        "meaning": "như thế này"
+    },
+    {
+        "id": 919,
+        "unit": 14,
+        "kanji": "カロリー",
+        "hiragana": "かろりー",
+        "hanTu": "",
+        "meaning": "ca-lo"
+    },
+    {
+        "id": 920,
+        "unit": 14,
+        "kanji": "生活習慣病",
+        "hiragana": "せいかつしゅうかんびょう",
+        "hanTu": "Sinh Hoạt Tập Quán Bệnh",
+        "meaning": "bệnh do thói quen sinh hoạt"
+    },
+    {
+        "id": 921,
+        "unit": 14,
+        "kanji": "増やす",
+        "hiragana": "ふやす",
+        "hanTu": "Tăng",
+        "meaning": "(làm) tăng"
+    },
+    {
+        "id": 922,
+        "unit": 14,
+        "kanji": "表示する",
+        "hiragana": "ひょうじする",
+        "hanTu": "Biểu Thị",
+        "meaning": "hiển thị, ghi, đề"
+    },
+    {
+        "id": 923,
+        "unit": 14,
+        "kanji": "適当な",
+        "hiragana": "てきとうな",
+        "hanTu": "Thích Đáng",
+        "meaning": "thích hợp"
+    },
+    {
+        "id": 924,
+        "unit": 14,
+        "kanji": "体重",
+        "hiragana": "たいじゅう",
+        "hanTu": "Thể Trọng",
+        "meaning": "trọng lượng cơ thể"
+    },
+    {
+        "id": 925,
+        "unit": 14,
+        "kanji": "多くの",
+        "hiragana": "おおくの",
+        "hanTu": "Đa",
+        "meaning": "nhiều"
+    },
+    {
+        "id": 926,
+        "unit": 14,
+        "kanji": "伝統的な",
+        "hiragana": "でんとうてきな",
+        "hanTu": "Truyền Thống Đích",
+        "meaning": "có tính truyền thống"
+    },
+    {
+        "id": 927,
+        "unit": 14,
+        "kanji": "最も",
+        "hiragana": "もっとも",
+        "hanTu": "Tối",
+        "meaning": "nhất"
+    },
+    {
+        "id": 928,
+        "unit": 14,
+        "kanji": "非常に",
+        "hiragana": "ひじょうに",
+        "hanTu": "Phi Thường",
+        "meaning": "rất"
+    },
+    {
+        "id": 929,
+        "unit": 14,
+        "kanji": "観光客",
+        "hiragana": "かんこうきゃく",
+        "hanTu": "Quan Quang Khách",
+        "meaning": "khách tham quan, khách du lịch"
+    },
+    {
+        "id": 930,
+        "unit": 14,
+        "kanji": "食パン",
+        "hiragana": "しょくぱん",
+        "hanTu": "Thực",
+        "meaning": "bánh mì"
+    },
+    {
+        "id": 931,
+        "unit": 14,
+        "kanji": "焼き鳥",
+        "hiragana": "やきとり",
+        "hanTu": "Thiêu Điểu",
+        "meaning": "thịt gà nướng"
+    },
+    {
+        "id": 932,
+        "unit": 14,
+        "kanji": "回転ずし",
+        "hiragana": "かいてんずし",
+        "hanTu": "Hồi Chuyển",
+        "meaning": "sushi băng chuyền"
+    },
+    {
+        "id": 933,
+        "unit": 14,
+        "kanji": "大好きな",
+        "hiragana": "だいすきな",
+        "hanTu": "Đại Hảo",
+        "meaning": "rất thích"
+    },
+    {
+        "id": 934,
+        "unit": 14,
+        "kanji": "一度に",
+        "hiragana": "いちどに",
+        "hanTu": "Nhất Độ",
+        "meaning": "một lần, một lúc"
+    },
+    {
+        "id": 935,
+        "unit": 14,
+        "kanji": "あっという間に",
+        "hiragana": "あっというまに",
+        "hanTu": "",
+        "meaning": "vèo một cái, chẳng mấy chốc"
+    },
+    {
+        "id": 936,
+        "unit": 14,
+        "kanji": "期間限定",
+        "hiragana": "きかんげんてい",
+        "hanTu": "Kỳ Gian Hạn Định",
+        "meaning": "giảm giá có thời hạn, khuyến mãi có thời hạn"
+    },
+    {
+        "id": 937,
+        "unit": 14,
+        "kanji": "中学2年生",
+        "hiragana": "ちゅうがく2ねんせい",
+        "hanTu": "Trung Học Niên Sinh",
+        "meaning": "học sinh năm 2 trung học"
+    },
+    {
+        "id": 938,
+        "unit": 14,
+        "kanji": "もったいない",
+        "hiragana": "もったいない",
+        "hanTu": "",
+        "meaning": "phí, phí hoài"
+    },
+    {
+        "id": 939,
+        "unit": 14,
+        "kanji": "無駄遣い",
+        "hiragana": "むだづかい",
+        "hanTu": "Vô Đà Khiển",
+        "meaning": "sử dụng lãng phí"
+    },
+    {
+        "id": 940,
+        "unit": 14,
+        "kanji": "健康グッズ",
+        "hiragana": "けんこうぐっず",
+        "hanTu": "Kiện Khang",
+        "meaning": "sản phẩm chăm sóc sức khỏe"
+    },
+    {
+        "id": 941,
+        "unit": 14,
+        "kanji": "数年前",
+        "hiragana": "すうねんまえ",
+        "hanTu": "Số Niên Tiền",
+        "meaning": "vài năm về trước"
+    },
+    {
+        "id": 942,
+        "unit": 14,
+        "kanji": "サムライ",
+        "hiragana": "さむらい",
+        "hanTu": "",
+        "meaning": "Samurai"
+    },
+    {
+        "id": 943,
+        "unit": 14,
+        "kanji": "作品",
+        "hiragana": "さくひん",
+        "hanTu": "Tác Phẩm",
+        "meaning": "tác phẩm"
+    },
+    {
+        "id": 944,
+        "unit": 14,
+        "kanji": "フォー",
+        "hiragana": "ふぉー",
+        "hanTu": "",
+        "meaning": "phở"
+    },
+    {
+        "id": 945,
+        "unit": 14,
+        "kanji": "ヌードル",
+        "hiragana": "ぬーどる",
+        "hanTu": "",
+        "meaning": "mì sợi"
+    }
 ]
